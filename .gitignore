@@ -1,0 +1,6 @@
+sass/
+package.json
+package-lock.json
+node_modules/
+css/styles.prefix.css
+css/styles.comp.css
