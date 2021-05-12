@@ -1,3 +1,4 @@
+
 const modal = document.querySelector(".portfolio__modal");
 const previews = document.querySelectorAll(".portfolio__grid img");
 const original = document.querySelector(".portfolio__full-img");
@@ -16,3 +17,4 @@ modal.addEventListener("click", (e) => {
         original.classList.remove("open");
     }
 });
+
