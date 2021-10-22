@@ -17,8 +17,8 @@
                 if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
                 t.invoked = !0, t.methods = ["identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on"],
                     t.factory = function (e) {
+                        var n = Array.prototype.slice.call(arguments);
                         return function () {
-                            var n = Array.prototype.slice.call(arguments);
                             return n.unshift(e), t.push(n), t;
                         };
                     }, t.methods.forEach(function (e) {
@@ -52,18 +52,16 @@
                 <li class="navigation__item"><a class="navigation__link" href="#pricing">Pricing</a></li>
                 <li class="navigation__item"><a class="navigation__link" href="#portfolio">Examples</a></li>
             </ul>
-            <a class="navbar__btn btn-small" href="https://www.upwork.com/o/profiles/users/~01735341f7777f861f/"
-                target="_blank">Get
-                Started</a>
+            <a class="navbar__btn btn-small" href="./pages/Purchase.html">Order Now</a>
         </nav>
 
         <!-- Header content  -->
         <div class="content">
             <h1 class="content__title">We help great businesses</span> build great social media
                 brands</h1>
-            <p class="content__descripton">We’re a unique blend of Graphic Designer and Social Media Manager! When
-                working with us, you can expect a partner who is tranparent, efficient and committed to helping you
-                leverage social media to achieve your marketing goals.</p>
+            <p class="content__descripton">We setup and grow your social media presence with VALUE content
+                and bring 1000's of new targeted
+                (City/Region) followers... (without any setup fees. Starting at just 197$/month.)</p>
             <a href="https://calendly.com/muhammadfaizan/30-min" class="content__btn btn-big" target="_blank">Schedule a
                 Call</a>
         </div>
@@ -103,6 +101,10 @@
                 <p class="pricing__feature">✔ Communication Via Slack</p>
                 <p class="pricing__feature">✔ Social Media Reporting</p>
                 <p class="pricing__feature">✔ Boost Ad Management</p>
+                <div id="pricingBtn__parent">
+                    <a id="pricing-btn" class="btn-small" href="./pages/Purchase.html">Order
+                        Now</a>
+                </div>
             </div>
             <!-- Plus  -->
             <div class="pricing__item pricing__Plus">
@@ -119,6 +121,10 @@
                 <p class="pricing__feature">✔ Communication Via Slack</p>
                 <p class="pricing__feature">✔ Social Media Reporting</p>
                 <p class="pricing__feature">✔ Boost Ad Management</p>
+                <div id="pricingBtn__parent">
+                    <a id="pricing-btn" class="btn-small" href="./pages/Purchase.html">Order
+                        Now</a>
+                </div>
             </div>
             <!-- Premium  -->
             <div class="pricing__item pricing__Premium">
@@ -135,6 +141,10 @@
                 <p class="pricing__feature">✔ Communication Via Slack</p>
                 <p class="pricing__feature">✔ Social Media Reporting</p>
                 <p class="pricing__feature">✔ Boost Ad Management</p>
+                <div id="pricingBtn__parent">
+                    <a id="pricing-btn" class="btn-small" href="./pages/Purchase.html">Order
+                        Now</a>
+                </div>
             </div>
         </div>
     </section>
@@ -213,7 +223,29 @@
     </section>
 
     <footer class="footer">
-        <p>2021 All Rights Reserved | Zan Media</p>
+
+        <div class="footer__top">
+            <div class="footer__address">
+                <h5 class="footer__title">Address</h5>
+                <p class="footer__description">PN (XII-P-20/A/RH/SH), Street No.3, Mohalla
+                    Qadirabad, Main Jandiyallah Road,
+                    Sheikhupura - 39350, Pakistan</p>
+            </div>
+
+
+            <div class="footer__policies">
+                <p class="footer__terms"><a href="/pages/Terms and Conditions.html">Terms and Conditions</a></p>
+                <p class="footer__terms"><a href="/pages/Privacy.html">Privacy Policy</a></p>
+                <p class="footer__terms"><a href="/pages/Refund.html">Refund Policy</a></p>
+                <p class="footer__terms"><a href="/pages/Delivery.html">Delivery Policy</a></p>
+            </div>
+        </div>
+
+        <p class="footer__rights">Need Help? Email Us: Support@zanmedia.net
+        </p>
+        <p class="footer__rights">2021 All Rights Reserved | ZANMEDIA
+        </p>
+
     </footer>
     <script src="/js/app.js"></script>
 </body>
