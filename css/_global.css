@@ -1,1 +1,242 @@
-*{margin:0;padding:0}*,::after,::before{-webkit-box-sizing:inherit;box-sizing:inherit}html{-webkit-box-sizing:border-box;box-sizing:border-box;font-size:62.5%;scroll-behavior:smooth}body{font-family:ridley_grotesksemibold,sans-serif;background-color:#fafafade;color:#2a2a2a;line-height:1.3}@font-face{font-family:ridley_grotesklight;src:url(/fonts/radomir_tinkov_-_ridleygrotesk-light-webfont.woff) format("woff");font-weight:400;font-style:normal}@font-face{font-family:ridley_groteskregular;src:url(/fonts/radomir_tinkov_-_ridleygrotesk-regular-webfont.woff) format("woff");font-weight:400;font-style:normal}@font-face{font-family:ridley_groteskmedium;src:url(/fonts/radomir_tinkov_-_ridleygrotesk-medium-webfont.woff) format("woff");font-weight:400;font-style:normal}@font-face{font-family:ridley_grotesksemibold;src:url(/fonts/radomir_tinkov_-_ridleygrotesk-semibold-webfont.woff) format("woff");font-weight:400;font-style:normal}@font-face{font-family:ridley_groteskbold;src:url(/fonts/radomir_tinkov_-_ridleygrotesk-bold-webfont.woff) format("woff");font-weight:400;font-style:normal}@font-face{font-family:ridley_groteskextrabold;src:url(/fonts/radomir_tinkov_-_ridleygrotesk-extrabold-webfont.woff) format("woff");font-weight:400;font-style:normal}h1{font-family:ridley_groteskextrabold,sans-serif;font-size:5.2rem;color:#2a2a2a;font-weight:400;font-style:normal}@media only screen and (max-width:1200px){h1{font-size:4.5rem}}@media only screen and (max-width:576px){h1{font-size:3.7rem}}h2{font-family:ridley_groteskbold,sans-serif;font-size:5rem;color:#2a2a2a;font-weight:400;font-style:normal}@media only screen and (max-width:1200px){h2{font-size:4.5rem}}@media only screen and (max-width:768px){h2{font-size:3.5rem;line-height:1.2}}h4{font-family:ridley_groteskbold,sans-serif;font-size:2.5rem;color:#2a2a2a;font-weight:400;font-style:normal}@media only screen and (max-width:768px){h4{line-height:1.2;font-size:3rem;font-family:ridley_grotesksemibold}}h5{font-family:ridley_grotesksemibold;font-size:2.5rem;color:#2a2a2a;font-weight:400;font-style:normal}h6{font-family:ridley_groteskbold,sans-serif;font-size:1.6rem;color:#2a2a2a;font-weight:400;font-style:normal}p{font-family:ridley_grotesksemibold,sans-serif;color:#2a2a2a;font-weight:400;font-style:normal;font-size:1.9rem}@media only screen and (max-width:1200px){p{font-size:1.8rem}}.btn-small:link,.btn-small:visited{background-color:transparent;display:inline-block;border:1px solid #2a2a2a;padding:1rem 1rem;color:#2a2a2a;text-decoration:none;border-radius:4px;-webkit-transition:all .5s;transition:all .5s;font-size:2rem}@media only screen and (max-width:850px){.btn-small:link,.btn-small:visited{font-size:1.6rem;padding:1rem 1rem}}.btn-small:focus,.btn-small:hover{background-color:#5f6060;color:#fff}.btn-big:link,.btn-big:visited{text-decoration:none;background-color:#2a2a2a;color:#fff;border-radius:4px;padding:1.6rem 1.6rem;font-size:2.8rem;display:inline-block;-webkit-transition:all .5s;transition:all .5s;border:1px solid #2a2a2a}.btn-big:hover{background-color:#363535}#pricingBtn__parent{margin-top:3rem;margin-bottom:-10px;display:flex;align-items:center;justify-content:center}.btn-privacy{margin-bottom:2rem;font-size:1.6rem!important;padding:.5rem 1.5rem .5rem 1.3rem!important;display:flex!important;align-items:center!important;width:100px!important}.navbar{max-width:122rem;padding:0 2rem;margin:auto;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.navbar__logo{height:11rem}@media only screen and (max-width:850px){.navbar__logo{height:8rem}}.navigation{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;list-style:none}@media only screen and (max-width:850px){.navigation{display:none}}.navigation__item:not(:last-of-type){margin-right:5rem}.navigation__link{color:#2a2a2a;text-decoration:none;font-size:2rem}.navigation__help{max-width:15rem}
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+::after,
+::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: ridley_grotesksemibold, sans-serif;
+  background-color: #fafafade;
+  color: #2a2a2a;
+  line-height: 1.3;
+}
+@font-face {
+  font-family: ridley_grotesklight;
+  src: url(/fonts/radomir_tinkov_-_ridleygrotesk-light-webfont.woff)
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: ridley_groteskregular;
+  src: url(/fonts/radomir_tinkov_-_ridleygrotesk-regular-webfont.woff)
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: ridley_groteskmedium;
+  src: url(/fonts/radomir_tinkov_-_ridleygrotesk-medium-webfont.woff)
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: ridley_grotesksemibold;
+  src: url(/fonts/radomir_tinkov_-_ridleygrotesk-semibold-webfont.woff)
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: ridley_groteskbold;
+  src: url(/fonts/radomir_tinkov_-_ridleygrotesk-bold-webfont.woff)
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: ridley_groteskextrabold;
+  src: url(/fonts/radomir_tinkov_-_ridleygrotesk-extrabold-webfont.woff)
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+h1 {
+  font-family: ridley_groteskextrabold, sans-serif;
+  font-size: 5.2rem;
+  color: #2a2a2a;
+  font-weight: 400;
+  font-style: normal;
+}
+@media only screen and (max-width: 1200px) {
+  h1 {
+    font-size: 4.5rem;
+  }
+}
+@media only screen and (max-width: 576px) {
+  h1 {
+    font-size: 3.7rem;
+  }
+}
+h2 {
+  font-family: ridley_groteskbold, sans-serif;
+  font-size: 5rem;
+  color: #2a2a2a;
+  font-weight: 400;
+  font-style: normal;
+}
+@media only screen and (max-width: 1200px) {
+  h2 {
+    font-size: 4.5rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  h2 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+  }
+}
+h4 {
+  font-family: ridley_groteskbold, sans-serif;
+  font-size: 2.5rem;
+  color: #2a2a2a;
+  font-weight: 400;
+  font-style: normal;
+}
+@media only screen and (max-width: 768px) {
+  h4 {
+    line-height: 1.2;
+    font-size: 3rem;
+    font-family: ridley_grotesksemibold;
+  }
+}
+h5 {
+  font-family: ridley_grotesksemibold;
+  font-size: 2.5rem;
+  color: #2a2a2a;
+  font-weight: 400;
+  font-style: normal;
+}
+h6 {
+  font-family: ridley_groteskbold, sans-serif;
+  font-size: 1.6rem;
+  color: #2a2a2a;
+  font-weight: 400;
+  font-style: normal;
+}
+p {
+  font-family: ridley_grotesksemibold, sans-serif;
+  color: #2a2a2a;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.9rem;
+}
+@media only screen and (max-width: 1200px) {
+  p {
+    font-size: 1.8rem;
+  }
+}
+.btn-small:link,
+.btn-small:visited {
+  background-color: transparent;
+  display: inline-block;
+  border: 1px solid #2a2a2a;
+  padding: 1rem 1rem;
+  color: #2a2a2a;
+  text-decoration: none;
+  border-radius: 4px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  font-size: 2rem;
+}
+@media only screen and (max-width: 850px) {
+  .btn-small:link,
+  .btn-small:visited {
+    font-size: 1.6rem;
+    padding: 1rem 1rem;
+  }
+}
+.btn-small:focus,
+.btn-small:hover {
+  background-color: #5f6060;
+  color: #fff;
+}
+.btn-big:link,
+.btn-big:visited {
+  text-decoration: none;
+  background-color: #2a2a2a;
+  color: #fff;
+  border-radius: 4px;
+  padding: 1.6rem 1.6rem;
+  font-size: 2.8rem;
+  display: inline-block;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  border: 1px solid #2a2a2a;
+}
+.btn-big:hover {
+  background-color: #363535;
+}
+#pricingBtn__parent {
+  margin-top: 3rem;
+  margin-bottom: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-privacy {
+  margin-bottom: 2rem;
+  font-size: 1.6rem !important;
+  padding: 0.5rem 1.5rem 0.5rem 1.3rem !important;
+  display: flex !important;
+  align-items: center !important;
+  width: 100px !important;
+}
+.navbar {
+  max-width: 122rem;
+  padding: 0 2rem;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.navbar__logo {
+  height: 11rem;
+}
+@media only screen and (max-width: 850px) {
+  .navbar__logo {
+    height: 8rem;
+  }
+}
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style: none;
+}
+@media only screen and (max-width: 850px) {
+  .navigation {
+    display: none;
+  }
+}
+.navigation__item:not(:last-of-type) {
+  margin-right: 5rem;
+}
+.navigation__link {
+  color: #2a2a2a;
+  text-decoration: none;
+  font-size: 2rem;
+}
+.navigation__help {
+  max-width: 15rem;
+}

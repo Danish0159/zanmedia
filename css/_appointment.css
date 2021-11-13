@@ -1,0 +1,335 @@
+/* The global css file is not included here, 
+It has a seperate fonts and code.
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+::after,
+::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: ridley_grotesksemibold, sans-serif;
+  background-color: #fafafade;
+  color: #2a2a2a;
+  /* line-height: 1.3; */
+}
+
+@font-face {
+  font-family: "tomato_groteskblack";
+  src: url("tomatogrotesk-black-webfont.woff2") format("woff2"),
+    url("tomatogrotesk-black-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "tomato_groteskblack_slanted";
+  src: url("tomatogrotesk-blackslanted-webfont.woff2") format("woff2"),
+    url("tomatogrotesk-blackslanted-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Used */
+@font-face {
+  font-family: "tomato_groteskbold";
+  src: url("/fonts/fontsv2/Final/tomatogrotesk-bold-webfont.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "tomato_groteskbold_slanted";
+  src: url("tomatogrotesk-boldslanted-webfont.woff2") format("woff2"),
+    url("tomatogrotesk-boldslanted-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "tomato_groteskextrabold";
+  src: url("tomatogrotesk-extrabold-webfont.woff2") format("woff2"),
+    url("tomatogrotesk-extrabold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "tomato_groteskXBdslanted";
+  src: url("tomatogrotesk-extraboldslanted-webfont.woff2") format("woff2"),
+    url("tomatogrotesk-extraboldslanted-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "tomato_groteskextralight";
+  src: url("tomatogrotesk-extralight-webfont.woff2") format("woff2"),
+    url("tomatogrotesk-extralight-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "tomato_groteskXLtslanted";
+  src: url("tomatogrotesk-extralightslanted-webfont.woff2") format("woff2"),
+    url("tomatogrotesk-extralightslanted-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "tomato_grotesklight";
+  src: url("tomatogrotesk-light-webfont.woff2") format("woff2"),
+    url("tomatogrotesk-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "tomato_grotesklight_slanted";
+  src: url("tomatogrotesk-lightslanted-webfont.woff2") format("woff2"),
+    url("tomatogrotesk-lightslanted-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "tomato_groteskmedium";
+  src: url("tomatogrotesk-medium-webfont.woff2") format("woff2"),
+    url("tomatogrotesk-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "tomato_groteskmedium_slanted";
+  src: url("tomatogrotesk-mediumslanted-webfont.woff2") format("woff2"),
+    url("tomatogrotesk-mediumslanted-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Used */
+@font-face {
+  font-family: "tomato_groteskregular";
+  src: url("/fonts/fontsv2/Final/tomatogrotesk-regular-webfont.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Used */
+@font-face {
+  font-family: "tomato_grotesksemibold";
+  src: url("/fonts/fontsv2/Final/tomatogrotesk-semibold-webfont.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "tomato_groteskSBdslanted";
+  src: url("tomatogrotesk-semiboldslanted-webfont.woff2") format("woff2"),
+    url("tomatogrotesk-semiboldslanted-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "tomato_groteskitalic";
+  src: url("tomatogrotesk-slanted-webfont.woff2") format("woff2"),
+    url("tomatogrotesk-slanted-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "tomato_groteskthin";
+  src: url("tomatogrotesk-thin-webfont.woff2") format("woff2"),
+    url("tomatogrotesk-thin-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "tomato_groteskthin_slanted";
+  src: url("tomatogrotesk-thinslanted-webfont.woff2") format("woff2"),
+    url("tomatogrotesk-thinslanted-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Navigation */
+header {
+  background-color: #2a2a2a;
+}
+
+.navbar {
+  max-width: 110rem;
+  padding: 0 2rem;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.navbar__logo {
+  height: 11rem;
+}
+@media only screen and (max-width: 850px) {
+  .navbar__logo {
+    height: 8rem;
+  }
+}
+
+.navbar__email {
+  font-family: "tomato_groteskregular";
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 850px) {
+  .navbar__email {
+    font-size: 1.5rem;
+  }
+}
+/* Appointment section */
+.appointment {
+  text-align: center;
+  padding: 3rem 0rem;
+}
+
+.appointment__title {
+  font-family: "tomato_groteskbold";
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.appointment__passage {
+  font-family: "tomato_groteskregular";
+  font-size: 3.3rem;
+  word-spacing: 2px;
+  margin-bottom: 3rem;
+}
+
+.appointment__span {
+  font-family: "tomato_groteskbold";
+  text-decoration: underline;
+  text-decoration-color: #ff5e3a;
+  color: #ff5e3a;
+}
+
+.appointment__subtitle {
+  font-family: "tomato_groteskregular";
+  font-size: 4rem;
+  margin-bottom: 3rem;
+}
+
+.appointment__video {
+  max-width: 90rem;
+  margin: auto;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+#appointment__last {
+  margin-bottom: 3rem;
+}
+
+.appointment__arrow {
+  margin-bottom: 3rem;
+}
+
+.appointment__btn {
+  margin-bottom: 3rem;
+}
+
+.appointment__btn {
+  background-color: #ff5e3a;
+  display: inline-block;
+  padding: 1.8rem 4.5rem;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.7rem;
+}
+
+.appointment__btn-top {
+  font-family: "tomato_grotesksemibold";
+  font-size: 3.4rem;
+}
+.appointment__btn-bottom {
+  font-family: "tomato_groteskregular";
+  font-size: 2rem;
+}
+
+.appointment__bottom {
+  font-family: "tomato_groteskregular";
+  font-size: 2.4rem;
+  color: #707070;
+  margin-bottom: 3rem;
+}
+
+/* Testimonialls Section */
+.testimonialls {
+  text-align: center;
+  background-color: #fff;
+  padding: 3rem 0rem;
+}
+
+.appointment__title2 {
+  word-spacing: 2px;
+  font-size: 3.7rem;
+  max-width: 800px;
+  margin: 0rem auto 3rem auto;
+}
+
+.appointment__passage2,
+.appointment__title3 {
+  max-width: 700px;
+  margin: 0rem auto 3rem auto;
+  text-align: left;
+}
+
+.appointment__passage3 {
+  text-align: center;
+}
+
+#appointment__footer1 {
+  font-size: 2.4rem;
+}
+
+#appointment__footer2 {
+  font-size: 1.5rem;
+}
+
+.testmoniall__img {
+  max-width: 75rem;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.testmoniall__img > img {
+  /* box-shadow: 0 0 10px rgb(230, 225, 225); */
+  box-shadow: 0 0 10px rgb(211, 208, 208);
+  width: 100%;
+  height: 100%;
+}
