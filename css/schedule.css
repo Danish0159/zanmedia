@@ -1,4 +1,12 @@
-/* .parent {
-  background-color: yellow;
-  min-height: 1000px;
-} */
+/* Solved this by increase iframe height. 
+ */
+
+.calendly-inline-widget {
+  min-height: 1050px !important;
+}
+
+@media only screen and (max-width: 1200px) {
+  .calendly-inline-widget {
+    min-height: 1050px !important;
+  }
+}
