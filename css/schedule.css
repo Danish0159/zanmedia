@@ -23,7 +23,6 @@ html {
 @media only screen and (max-width: 1200px) {
   .calendly-inline-widget {
     width: 100% !important;
-    border-radius: 6px !important;
   }
   .parent {
     margin: 3rem 5rem;
@@ -32,10 +31,11 @@ html {
 
 @media only screen and (max-width: 712px) {
   body {
-    background-color: orange;
+    background-color: #fafafade;
   }
 
   .parent {
-    margin: 3rem 2.3rem;
+    margin: 4rem 2rem;
+    margin-bottom: 14rem;
   }
 }
