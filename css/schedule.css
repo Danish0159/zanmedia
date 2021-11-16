@@ -1,6 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+::after,
+::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
 /* Solved this by increase iframe height. 
  */
-
 .calendly-inline-widget {
   min-height: 1050px !important;
 }
@@ -8,6 +23,7 @@
 @media only screen and (max-width: 1200px) {
   .calendly-inline-widget {
     width: 100% !important;
+    border-radius: 6px !important;
   }
   .parent {
     margin: 3rem 5rem;
@@ -20,6 +36,6 @@
   }
 
   .parent {
-    margin: 3rem 1.5rem;
+    margin: 3rem 2.3rem;
   }
 }
