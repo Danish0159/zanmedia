@@ -25,14 +25,17 @@ html {
     width: 100% !important;
   }
   .parent {
-    margin: 3rem 0rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin: 3rem 5rem;
   }
 }
 
 @media only screen and (max-width: 712px) {
   body {
     background-color: #fafafade;
+  }
+
+  .parent {
+    margin: 4rem 2rem;
+    margin-bottom: 14rem;
   }
 }
