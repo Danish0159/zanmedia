@@ -7,6 +7,19 @@
 
 @media only screen and (max-width: 1200px) {
   .calendly-inline-widget {
-    min-height: 1050px !important;
+    width: 100% !important;
+  }
+  .parent {
+    margin: 3rem 5rem;
+  }
+}
+
+@media only screen and (max-width: 712px) {
+  body {
+    background-color: orange;
+  }
+
+  .parent {
+    margin: 3rem 1.5rem;
   }
 }
