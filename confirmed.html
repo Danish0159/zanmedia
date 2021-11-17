@@ -6,7 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="https://www.zanmedia.net/FavLogo.ico" />
+    <link rel="stylesheet" href="/css/confirmed.css">
     <title>ZANMEDIA - Confirmed</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
     <!-- Facebook Pixel Code -->
     <script>
         !function (f, b, e, v, n, t, s) {
@@ -29,51 +33,50 @@
     </noscript>
     <!-- End Facebook Pixel Code -->
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            padding: 60px;
-            background: #f1f1f1
-        }
-
-        p {
-            color: rgba(31, 37, 38, .5);
-        }
-
-        p span {
-            color: rgba(31, 37, 38, .75);
-        }
-
-        .card {
-            margin: 0 auto;
-            width: 100%;
-            max-width: 600px;
-            padding: 60px;
-            background: #fff;
-            box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
-            border-radius: 30px;
-        }
-
-        .avatar {
-            height: 90px;
-            width: 90px;
-            border-radius: 45px;
-            background: #c5daea;
-            margin: 0 auto 60px auto;
-            box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.1);
-        }
     </style>
 </head>
 
 <body>
-    <div class="card">
-        <div class="avatar"></div>
-        <p><span id='js-eventTypeName'>unavailable</span></p>
-        <p><span id='js-formattedDate'>unavailable</span></p>
-        <p>Location Address: <span>123 Road Street, Big City, TN 12345</span></p>
-        <p>A calendar invitation has been sent to your email address.</p>
-    </div>
+    <section class="confirmed">
+        <div class="card">
+            <div class="card__avatar">
+                <img src="/img/avatarr.png" alt="Avatar">
+            </div>
 
+            <div class="card__details">
+                <h1 class="card__title">Confirmed</h1>
+                <p class="card__subtitle">You are scheduled with M Faizan .
+                </p>
+
+                <div class="card__subdetails">
+                    <div class="card__group">
+                        <img src="/img/1Icon.png" />
+                        <p><span id='js-eventTypeName'>unavailable</span></p>
+                    </div>
+
+                    <div class="card__group">
+                        <img src="/img/2Icon.png" />
+                        <p><span id='js-formattedDate'>unavailable</span></p>
+                    </div>
+
+                    <div class="card__group">
+                        <img src="/img/3Icon.png" />
+                        <p>Web conferencing details to follow.</p>
+                    </div>
+
+                    <!-- <div class="card__group"> -->
+                    <p class="card__last">A calendar invitation has been sent to your email address.</p>
+                    <!-- </div> -->
+
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- All Available Values -->
     <!--

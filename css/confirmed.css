@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+::after,
+::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.confirmed {
+  min-height: 100vh;
+  background-color: #fbfcfd;
+  padding: 0rem 3rem;
+  padding-top: 68px;
+  padding-bottom: 30px;
+}
+
+.card {
+  background-color: #fff;
+  max-width: 100rem;
+  margin: auto;
+  border-radius: 8px;
+  border: 1px solid var(rgba(26, 26, 26, 0.1), rgba(26, 26, 26, 0.1));
+  border-radius: 8px;
+  box-shadow: 0 1px 8px 0 rgb(0 0 0 / 8%);
+  padding-bottom: 18rem;
+}
+
+.card__avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.card__avatar > img {
+  box-sizing: content-box;
+  margin-top: -50px;
+  width: 6.5rem;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgb(202, 199, 199);
+  border: 5px solid rgb(255, 255, 255);
+}
+
+.card__title {
+  font-weight: 500;
+  color: #1a1a1a;
+  font-size: 2.1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.card__subtitle {
+  color: #000000;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.7rem;
+  margin-bottom: 2.4rem;
+  text-align: center;
+}
+
+.card__details {
+  max-width: 450px;
+  margin: auto;
+}
+
+.card__subdetails {
+  border-top: 1px solid rgba(26, 26, 26, 0.1);
+  border-bottom: 1px solid rgba(26, 26, 26, 0.1);
+  padding: 3rem 0rem;
+}
+
+.card__group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.card__group > img {
+  width: 2.4rem;
+}
+
+.card__group > p,
+.card__group > p > span,
+.card__last {
+  font-weight: 700;
+  color: black;
+  font-size: 1.6rem;
+}
+
+.card__last {
+  margin-top: 2.4rem;
+  margin-left: 2rem;
+}
+
+.card__group > p {
+  margin-left: 0.8rem;
+}
+
+@media only screen and (max-width: 650px) {
+  .confirmed {
+    background-color: #fff;
+    padding: 0rem 2rem;
+    padding-top: 68px;
+    padding-bottom: 10px;
+  }
+
+  .card {
+    box-shadow: none;
+    padding-bottom: 7rem;
+  }
+
+  .card__last {
+    text-align: center;
+  }
+}
