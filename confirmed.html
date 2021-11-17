@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="https://www.zanmedia.net/FavLogo.ico" />
     <title>ZANMEDIA - Confirmed</title>
-
     <!-- Facebook Pixel Code -->
     <script>
         !function (f, b, e, v, n, t, s) {
@@ -26,13 +25,167 @@
     </script>
     <noscript>
         <img height="1" width="1" src="https://www.facebook.com/tr?id=604828754176103&ev=PageView
-                        &noscript=1" />
+                            &noscript=1" />
     </noscript>
     <!-- End Facebook Pixel Code -->
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 60px;
+            background: #f1f1f1
+        }
+
+        p {
+            color: rgba(31, 37, 38, .5);
+        }
+
+        p span {
+            color: rgba(31, 37, 38, .75);
+        }
+
+        .card {
+            margin: 0 auto;
+            width: 100%;
+            max-width: 600px;
+            padding: 60px;
+            background: #fff;
+            box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+            border-radius: 30px;
+        }
+
+        .avatar {
+            height: 90px;
+            width: 90px;
+            border-radius: 45px;
+            background: #c5daea;
+            margin: 0 auto 60px auto;
+            box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Thank You!</h1>
+    <div class="card">
+        <div class="avatar"></div>
+        <p><span id='js-eventTypeName'>unavailable</span></p>
+        <p><span id='js-formattedDate'>unavailable</span></p>
+        <p>Location Address: <span>123 Road Street, Big City, TN 12345</span></p>
+        <p>A calendar invitation has been sent to your email address.</p>
+    </div>
+
+
+    <!-- All Available Values -->
+    <!--
+    <p>Event Type Name: <span id='js-eventTypeName'></span></p>
+    <p>Event Type UUID: <span id='js-eventTypeUuid'></span></p>
+    <p>Event Start Time: <span id='js-eventStartTime'></span></p>
+    <p>Event End Time: <span id='js-eventEndTime'></span></p>
+    <p>Invitee UUID: <span id='js-inviteeUuid'></span></p>
+    <p>Invitee Email: <span id='js-inviteeEmail'></span></p>
+    <p>Invitee First Name: <span id='js-inviteeFirstName'></span></p>
+    <p>Invitee Last Name: <span id='js-inviteeLastName'></span></p>
+    <p>Invitee Full Name: <span id='js-inviteeFullName'></span></p>
+    <p>Invitee Payment Amount: <span id='js-inviteePaymentAmount'></span></p>
+    <p>Invitee Payment Currency: <span id='js-inviteePaymentCurrency'></span></p>
+    <p>Guests : <span id='js-guests'></span></p>
+    <p>UTM Source: <span id='js-utmSource'></span></p>
+    <p>UTM Medium: <span id='js-utmMedium'></span></p>
+    <p>UTM Campaign: <span id='js-utmCampaign'></span></p>
+    <p>UTM Content: <span id='js-utmContent'></span></p>
+    <p>UTM Term: <span id='js-utmTerm'></span></p>
+    <p>Assigned To: <span id='js-assignedTo'></span></p>
+    <p>Text Reminder Number: <span id='js-textReminderNumber'></span></p>
+    <p>Answer 1: <span id='js-answer1'></span></p>
+    -->
+
+    <script>
+        var queryString = window.location.search;
+        var urlParams = new URLSearchParams(queryString);
+
+        // Note: Available Parameters 
+        var eventTypeName = urlParams.get('event_type_name');
+        var eventTypeUuid = urlParams.get('event_type_uuid');
+        var eventStartTime = urlParams.get('event_start_time');
+        var eventEndTime = urlParams.get('event_end_time');
+        var inviteeUuid = urlParams.get('invitee_uuid');
+        var inviteeEmail = urlParams.get('invitee_email');
+        var inviteeFirstName = urlParams.get('invitee_first_name');
+        var inviteeLastName = urlParams.get('invitee_last_name');
+        var inviteeFullName = urlParams.get('invitee_full_name');
+        var inviteePaymentAmount = urlParams.get('invitee_payment_amount');
+        var inviteePaymentCurrency = urlParams.get('invitee_payment_currency');
+        var guests = urlParams.get('guests');
+        var utmSource = urlParams.get('utm_source');
+        var utmMedium = urlParams.get('utm_medium');
+        var utmCampaign = urlParams.get('utm_campaign');
+        var utmContent = urlParams.get('utm_content');
+        var utmTerm = urlParams.get('utm_term');
+        var assignedTo = urlParams.get('assigned_to');
+        var TextReminderNumber = urlParams.get('text_reminder_number');
+        var answer1 = urlParams.get('answer_1');
+        var answer2 = urlParams.get('answer_2');
+        var answer3 = urlParams.get('answer_3');
+        var answer4 = urlParams.get('answer_4');
+        var answer5 = urlParams.get('answer_5');
+        var answer6 = urlParams.get('answer_6');
+        var answer7 = urlParams.get('answer_7');
+        var answer8 = urlParams.get('answer_8');
+        var answer9 = urlParams.get('answer_9');
+        var answer10 = urlParams.get('answer_10');
+
+        // Note: Create time values for the Start Time, End Time and Date. It assumes the end date is the same as the start date, only referencing the end time.
+        var startTime = new Date(eventStartTime); // Note: extracts the first time value from the Start Time parameter
+        var endTime = new Date(eventEndTime); // Note: extracts the first time value from the End Time parameter
+        var startDate = new Date(eventStartTime);  // Note: Start Time is used to extract the Date Values
+
+        var dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        var timeOptions = { hour: 'numeric', minute: 'numeric', hour12: true };
+
+        // Note: All available values 
+        //document.getElementById('js-eventTypeUuid').innerHTML = eventTypeUuid;
+        //document.getElementById('js-eventStartTime').innerHTML = eventStartTime;
+        //document.getElementById('js-eventEndTime').innerHTML = eventEndTime;
+        //document.getElementById('js-inviteeUuid').innerHTML = inviteeUuid;
+        //document.getElementById('js-inviteeEmail').innerHTML = inviteeEmail;
+        //document.getElementById('js-inviteeFirstName').innerHTML = inviteeFirstName;
+        //document.getElementById('js-inviteeLastName').innerHTML = inviteeLastName;
+        //document.getElementById('js-inviteeFullName').innerHTML = inviteeFullName;
+        //document.getElementById('js-inviteePaymentAmount').innerHTML = inviteePaymentAmount;
+        //document.getElementById('js-inviteePaymentCurrency').innerHTML = inviteePaymentCurrency;
+        //document.getElementById('js-guests').innerHTML = guests;
+        //document.getElementById('js-utmSource').innerHTML = utmSource;
+        //document.getElementById('js-utmMedium').innerHTML = utmMedium;
+        //document.getElementById('js-utmCampaign').innerHTML = utmCampaign;
+        //document.getElementById('js-utmContent').innerHTML = utmContent;
+        //document.getElementById('js-utmTerm').innerHTML = utmTerm;
+        //document.getElementById('js-assignedTo').innerHTML = assignedTo;
+        //document.getElementById('js-textReminderNumber').innerHTML = TextReminderNumber;
+        //document.getElementById('js-answer1').innerHTML = answer1;
+
+        // Note: Display the available values in the html element with the assigned ID
+        if (eventTypeName != '') {
+            document.getElementById('js-eventTypeName').innerHTML = eventTypeName;
+        }
+        if (startTime != '') {
+            document.getElementById('js-formattedDate').innerHTML = (new Intl.DateTimeFormat('en-US', timeOptions).format(startTime) + ' - ' + new Intl.DateTimeFormat('en-US', timeOptions).format(endTime) + ' ' + new Intl.DateTimeFormat('en-US', dateOptions).format(startDate));
+        };
+
+
+        // This below isn't really necessary. It just logs values into the console for debugging.
+
+        // Note: Loop through and log all available values:
+        const
+            keys = urlParams.keys(),
+            values = urlParams.values(),
+            entries = urlParams.entries();
+
+        // Note: Log all available parameters and values into the console
+        for (const entry of entries) {
+            console.log(`${entry[0]}: ${entry[1]}`);
+        }
+
+    </script>
 </body>
 
 </html>
