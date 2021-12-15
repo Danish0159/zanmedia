@@ -110,6 +110,10 @@
   }
 }
 
+.pricing__feature {
+  margin: 1.5rem;
+  font-size: 1.7rem;
+}
 /* Footer Section */
 .footer {
   margin-top: 15rem;
