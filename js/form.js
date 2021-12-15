@@ -53,4 +53,13 @@ form.addEventListener('submit', function (e) {
     e.preventDefault();
     checkRequired([username, email, website, products, message]);
     checkEmail(email);
+
+    let myForm = document.getElementById('form');
+    let formData = new FormData(myForm)
+    fetch('/', {
+        method: 'POST',
+        headers: { "Content-Type": "multipart/form-data" },
+        body: new URLSearchParams(formData).toString()
+    }).then(() => console.log('Form successfully submitted')).catch((error) =>
+        alert(error))
 })
