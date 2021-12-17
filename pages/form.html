@@ -7,7 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/_form.css">
     <title>ZANMEDIA - Onboarding</title>
+    <script>
+        // function myFunction() {
+        //     fileName = document.querySelector("#Logo").files[0].name;
+        //     document.querySelector(".btn").innerHTML = fileName;
+        // }
+
+        function myProfile() {
+            fileName = document.querySelector("#profile").files[0].name;
+            document.querySelector(".btn1").innerHTML = fileName;
+        }
+
+    </script>
 </head>
+
 
 <body>
 
@@ -32,50 +45,61 @@
         <!-- Form Container -->
         <div class="form-container">
 
-            <form id="form" name="contact" method="POST" class="form" data-netlify="true">
+
+            <!-- <form name="contact" netlify method='post' enctype='multipart/form-data' action="/thank-you/">
+                <input type="text" name="name" required />
+                <input type="email" name="email" required />
+                <textarea name="message" required></textarea>
+                <input type="file" id="file" name="Logo" multiple required>
+                <button type="submit">submit</button>
+            </form> -->
+            <form class="form" name="contact" netlify method='post' enctype='multipart/form-data' action="/thank-you/">
                 <div class="form-control">
-                    <label for="username">
+                    <label for="name">
                         <p>Username</p>
                     </label>
-                    <input type="text" id="username" placeholder="Full Name">
-                    <small>Error Message</small>
+                    <input type="text" name="name" placeholder="Full Name" required>
+                    <!-- <small>Error Message</small> -->
                 </div>
 
                 <div class="form-control">
                     <label for="email">
                         <p> Email</p>
                     </label>
-                    <input type="email" id="email" placeholder="Email">
-                    <small>Error Message</small>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <!-- <small>Error Message</small> -->
                 </div>
 
                 <div class="form-control">
                     <label for="website">
                         <p> Company Website</p>
                     </label>
-                    <input type="text" id="website" placeholder="Company website">
-                    <small>Error Message</small>
+                    <input type="text" name="website" placeholder="Company website" required>
+                    <!-- <small>Error Message</small> -->
                 </div>
 
                 <div class="form-control">
                     <label for="products">
                         <p> What do you do? Briefly describe your products and/or services?</p>
                     </label>
-                    <textarea id="products" cols="30" rows="7"></textarea>
-                    <small>Error Message</small>
+                    <textarea id="products" cols="30" rows="7" required></textarea>
+                    <!-- <small>Error Message</small> -->
                 </div>
 
                 <div class="form-control">
                     <label for="message">
                         <p>Are there any topics we should post about regularly?</p>
                     </label>
-                    <textarea id="message" cols="30" rows="7"></textarea>
-                    <small>Error Message</small>
+                    <textarea name="message" cols="30" rows="7" required></textarea>
+                    <!-- <small>Error Message</small> -->
                 </div>
 
                 <div class="form-control">
-                    <input type="file" value="Upload Your Logo">
+                    <label for="profile" class="btn1">Select Profile</label>
+                    <input type="file" id="profile" name="profile" style="display: none;" onchange="myProfile()"
+                        multiple required>
                 </div>
+
 
                 <button type="submit">Submit</button>
             </form>
@@ -83,6 +107,7 @@
 
     </section>
     <script src="/js/form.js"></script>
+
 
 </body>
 

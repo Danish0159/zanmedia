@@ -155,7 +155,9 @@
   visibility: visible;
 }
 
-.form button {
+.form button,
+.btn,
+.btn1 {
   cursor: pointer;
   background-color: rgba(240, 104, 74, 1);
   border: 2px solid rgba(240, 104, 74, 1);
