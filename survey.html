@@ -10,7 +10,7 @@
         UPLOADCARE_PUBLIC_KEY = '0ba88cb703de26fa0db3';
     </script>
     <script src="https://ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js"></script>
-    <title>ZANMEDIA - Onboarding-1</title>
+    <title>ZANMEDIA | Onboarding</title>
 </head>
 
 <!-- import uploadcare from 'uploadcare-widget'; -->
@@ -19,8 +19,7 @@
 
     <section class="form-section">
 
-        <form class="form" name="contact" netlify method='post' enctype='multipart/form-data'
-            action="https://zanmedia.net/pages/slack">
+        <form class="form" name="contact" netlify method='post' enctype='multipart/form-data' action="/Slack">
 
             <h2 class="form__subtitle">1-
                 Onboarding Survey
@@ -41,6 +40,7 @@
                 </label>
                 <textarea id="one" name="one" cols="30" rows="5" required></textarea>
             </div>
+
 
             <div class="form-control">
                 <label for="two">
@@ -74,7 +74,6 @@
                     </p>
                 </label>
             </div>
-
 
             <input type="hidden" role="uploadcare-uploader" data-public-key="0ba88cb703de26fa0db3" data-multiple="true"
                 data-tabs="file camera url facebook gdrive gphotos" />
