@@ -132,6 +132,8 @@ textarea {
   display: block;
   font-size: 17px;
   padding: 13px 53px;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .join__paragraph {
