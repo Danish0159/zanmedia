@@ -10,87 +10,85 @@
         UPLOADCARE_PUBLIC_KEY = '0ba88cb703de26fa0db3';
     </script>
     <script src="https://ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js"></script>
-    <title>ZANMEDIA - Onboarding</title>
+    <title>ZANMEDIA - Onboarding-1</title>
 </head>
 
 <!-- import uploadcare from 'uploadcare-widget'; -->
 
-<body>
-
-    <!-- Header  -->
-    <!-- <header class="header">
-        <div class="header__content">
-            <p>ZANMEDIA</p>
-            <h1>Social Media Management & Follower Growth
-            </h1>
-        </div>
-    </header> -->
-
+<body style="background-color: #ECEDF3;">
 
     <section class="form-section">
-        <h2 class="form__subtitle">Thank you for your Interest in our Services
-        </h2>
 
-        <p class="form__paragraph">Please fill out the payment form below to get started.
-        </p>
+        <form class="form" name="contact" netlify method='post' enctype='multipart/form-data'
+            action="https://zanmedia.net/pages/slack">
 
-        <!-- Form Container -->
-        <div class="form-container">
+            <h2 class="form__subtitle">1-
+                Onboarding Survey
+            </h2>
+
+            <p class="form__paragraph">Tell us a little more about your business, provide some assets for us, and
+                let us
+                know more about who we're speaking to
+                on social media!
+            </p>
+
+            <div class="form-control">
+                <label for="What is the name of your business? Also, please provide the URL for your social media links
+                            and your website
+                            (Important!) *">
+                    <p> What is the name of your business? Also, please provide the URL for your social media links
+                        and your website
+                        (Important!) *
+                    </p>
+                </label>
+                <textarea name="What is the name of your business? Also, please provide the URL for your social media links
+                            and your website
+                            (Important!) *" cols="30" rows="5" required></textarea>
+            </div>
+
+            <div class="form-control">
+                <label
+                    for="What does your ideal customer look like? What do they act like, what do they spend their money on, what do they get up to in their free time... the more detailed you are, the better our targeting/hashtags will be! And then, what does your ideal customer NOT look like? What are the characteristics that make them not a good fit for you... be as detailed as you can*">
+                    <p>What does your ideal customer look like? What do they act like, what do they spend their money
+                        on, what do they get up
+                        to in their free time... the more detailed you are, the better our targeting/hashtags will be!
+                        And then, what does your
+                        ideal customer NOT look like? What are the characteristics that make them not a good fit for
+                        you... be as detailed as
+                        you can </p>
+                </label>
+                <textarea
+                    name="What does your ideal customer look like? What do they act like, what do they spend their money on, what do they get up to in their free time... the more detailed you are, the better our targeting/hashtags will be! And then, what does your ideal customer NOT look like? What are the characteristics that make them not a good fit for you... be as detailed as you can"
+                    cols="30" rows="5" required></textarea>
+            </div>
+
+            <div class="form-control">
+                <label for="Provide examples of pages you like for our inspiration.">
+                    <p>Provide examples of pages you like for our inspiration.
+                    </p>
+                </label>
+                <textarea name="Provide examples of pages you like for our inspiration." cols="30" rows="5"
+                    required></textarea>
+            </div>
+
+            <div class="form-control">
+                <label>
+                    <p style="margin-bottom: -20px">Upload brand logo and font. Also any other marketing images/content
+                        to use for social media
+                        posts. Maybe you want to
+                        satisfy curiosity by showing off how your product is made. Or share an employees perspective
+                        to humanize your brand. The
+                        more content, the better the engagement/growth.
+                    </p>
+                </label>
+            </div>
 
 
-            <!-- <form name="contact" netlify method='post' enctype='multipart/form-data' action="/thank-you/">
-                <input type="text" name="name" required />
-                <input type="email" name="email" required />
-                <textarea name="message" required></textarea>
-                <input type="file" id="file" name="Logo" multiple required>
-                <button type="submit">submit</button>
-            </form> -->
-            <form class="form" name="contact" netlify method='post' enctype='multipart/form-data' action="/thank-you/">
-                <div class="form-control">
-                    <label for="name">
-                        <p>Username</p>
-                    </label>
-                    <input type="text" name="name" placeholder="Full Name" required>
-                    <!-- <small>Error Message</small> -->
-                </div>
+            <input type="hidden" role="uploadcare-uploader" data-public-key="0ba88cb703de26fa0db3" data-multiple="true"
+                data-tabs="file camera url facebook gdrive gphotos" />
 
-                <div class="form-control">
-                    <label for="email">
-                        <p> Email</p>
-                    </label>
-                    <input type="email" name="email" placeholder="Email" required>
-                    <!-- <small>Error Message</small> -->
-                </div>
-
-                <div class="form-control">
-                    <label for="website">
-                        <p> Company Website</p>
-                    </label>
-                    <input type="text" name="website" placeholder="Company website" required>
-                    <!-- <small>Error Message</small> -->
-                </div>
-
-                <div class="form-control">
-                    <label for="products">
-                        <p> What do you do? Briefly describe your products and/or services?</p>
-                    </label>
-                    <textarea id="products" cols="30" rows="7" required></textarea>
-                    <!-- <small>Error Message</small> -->
-                </div>
-
-                <div class="form-control">
-                    <label for="message">
-                        <p>Are there any topics we should post about regularly?</p>
-                    </label>
-                    <textarea name="message" cols="30" rows="7" required></textarea>
-                    <!-- <small>Error Message</small> -->
-                </div>
-                <input type="hidden" role="uploadcare-uploader" data-public-key="0ba88cb703de26fa0db3"
-                    data-multiple="true" data-tabs="file camera url facebook gdrive gphotos" />
-
-                <button class="form-btn" type="submit">Submit</button>
-            </form>
-        </div>
+            <button class="form-btn" type="submit">Submit</button>
+        </form>
 
     </section>
     <script src="/js/form.js"></script>
