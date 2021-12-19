@@ -44,7 +44,7 @@
 
 /* Hop On Section */
 .hop-on__title {
-  max-width: 25%;
+  max-width: 29%;
   display: block;
   margin: auto;
   margin-top: 1rem;
@@ -285,31 +285,11 @@
 /* --------------------------------------- */
 .features {
   text-align: center;
-  clip-path: polygon(0 10%, 100% 0%, 100% 89%, 0% 100%);
-  background: rgb(252, 161, 104);
-  background: linear-gradient(
-    90deg,
-    rgba(252, 161, 104, 1) 42%,
-    rgba(240, 104, 74, 1) 100%
-  );
-  background-size: cover;
-  /* Speacial Padding For This Section */
-  /* Overriding Global Section padding */
-  padding: 10rem 3rem;
-}
-
-@media only screen and (max-width: 1150px) {
-  .features {
-    /* Speacial Padding For this Section */
-    /* Overriding Global Section padding */
-    padding: 13rem 2rem;
-    clip-path: polygon(0 7%, 100% 0%, 100% 95%, 0% 100%);
-  }
 }
 
 .features__subtitle {
   margin-bottom: 4rem;
-  color: #ffffff;
+  color: #2a2a2a;
 }
 
 .features__grid {
@@ -354,40 +334,21 @@
 /* +++++++++++++++++++++++++++++++++++++++++++++= */
 /* Process Section */
 .process {
-  margin-top: 4rem;
-  clip-path: polygon(0 10%, 100% 0%, 100% 89%, 0% 100%);
   text-align: center;
-  background: rgb(252, 161, 104);
-  background: linear-gradient(
-    90deg,
-    rgba(252, 161, 104, 1) 42%,
-    rgba(240, 104, 74, 1) 100%
-  );
-  background-size: cover;
-  /* Speacial Padding For This Section */
-  /* Overriding Global Section padding */
-  padding: 10rem 3rem;
-}
-
-@media only screen and (max-width: 1150px) {
-  .process {
-    /* Speacial Padding For this Section */
-    /* Overriding Global Section padding */
-    padding: 13rem 2rem;
-    clip-path: polygon(0 7%, 100% 0%, 100% 95%, 0% 100%);
-  }
 }
 
 .process__title {
-  font-family: ridley_groteskregular;
-  font-size: 1.5rem;
+  padding: 0.7rem 0.7rem;
+  display: inline-block;
+  background-color: #f0684a;
+  border-radius: 3px;
   margin-bottom: 2rem;
-  color: #ffffff;
+  color: #2a2a2a;
 }
 
 .process__subtitle {
   font-size: 3.3rem;
-  color: #ffffff;
+  color: #2a2a2a;
   margin-bottom: 4rem;
 }
 
@@ -700,16 +661,13 @@
   -ms-flex-item-align: end;
   align-self: flex-end;
   margin-right: 4rem;
-  padding: 1rem 2rem;
-  font-size: 3.2rem;
+  padding: 0.8rem 1.6rem;
+  font-size: 2.8rem;
 }
 @media only screen and (max-width: 373px) {
   .pushing__btn:link,
   .pushing__btn:visited {
     margin-right: 0;
-    padding: 0.8rem 1.7rem;
-    font-size: 2.7rem;
-    -ms-flex-item-align: center;
     align-self: center;
   }
 }
