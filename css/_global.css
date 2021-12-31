@@ -198,6 +198,19 @@ p {
   align-items: center !important;
   width: 100px !important;
 }
+
+#gallery-btn {
+  /* border-radius: 25px; */
+  font-size: 1.6rem;
+}
+
+/* .site-btn {
+  font-size: 1.5rem !important;
+  border: 1px solid #f0684a !important;
+  background-color: #f0684a !important;
+  color: #fff !important;
+} */
+
 .navbar {
   max-width: 122rem;
   padding: 0 2rem;

@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <meta name="description" content="We Establish Your Social Media Presence And Bring New Targeted Followers, With Value Content And
             Boost Ads. (Without any setup fees or long-term contracts)" />
     <meta name="keywords" content="
@@ -18,10 +17,13 @@
         social media management service,
         social media management for small business,
         " />
-
     <link rel="icon" type="image/png" href="https://www.zanmedia.net/FavLogo.ico" />
     <link rel="stylesheet" href="/css/styles.css">
+    <!-- LightBox CSS -->
+    <link rel="stylesheet" href="/css/lightbox.css">
+
     <title>ZANMEDIA</title>
+    <!-- Start of Async Drift Code -->
     <script>
         "use strict";
         !function () {
@@ -48,16 +50,12 @@
         drift.load('9fcrbwfw29sh');
     </script>
     <!-- End of Async Drift Code -->
-
+    <script src="/js/app.js"></script>
 </head>
 
 <body>
-    <!-- FaviIcon -->
-    <link rel="icon" href="https://www.zanmedia.net/img/logo.png" />
-
     <!-- Header  -->
     <header class="header" id="header">
-
         <nav class="navbar">
             <img class="navbar__logo" src="img/logo.png" alt="Logo">
             <ul class="navigation">
@@ -65,7 +63,7 @@
                 <li class="navigation__item"><a class="navigation__link" href="#pricing">Pricing</a></li>
                 <li class="navigation__item"><a class="navigation__link" href="#portfolio">Examples</a></li>
             </ul>
-            <a class="navbar__btn btn-small" href="./pages/pricing.html" target="_blank">Order Now</a>
+            <a class="btn-small" href="pricing.html" target="_blank">Order Now</a>
         </nav>
 
         <!-- Header content  -->
@@ -77,7 +75,7 @@
                 Followers, With Value Content And Boost Ads.
                 (Without any setup fees or long-term contract)
             </p>
-            <a href="/survey.html" class="content__btn btn-big">Start 7 Day Trial
+            <a href="/survey.html" class="content__btn btn-big" target="_blank">Start 7 Day Trial
             </a>
         </div>
 
@@ -172,6 +170,8 @@
                 <p class="pricing__feature">✔ Weekly social media videos</p>
                 <div id="pricingBtn__parent">
                     <a id="pricing-btn" class="btn-small" href="/survey.html" target="_blank">Start 7 Day Trial</a>
+
+
                 </div>
             </div>
         </div>
@@ -235,7 +235,6 @@
         </div>
 
     </section>
-
     <!-- portfolio Section  -->
     <section class="portfolio section" id="portfolio">
         <h4 class="portfolio__title">DON’T TAKE OUR WORD FOR IT</h4>
@@ -243,20 +242,22 @@
 
         <div class="portfolio__grid">
             <div class="portfolio__div">
-                <img class="portfolio__img" src="/img/B1-small.jpg" alt="Portfolio Img" data-original="B1-small.jpg">
+                <a href="/img/O2.jpg" data-lightbox="gallery">
+                    <img src="/img/O2.jpg" alt="fields">
+                </a>
             </div>
             <div class="portfolio__div">
-                <img class="portfolio__img" src="/img/B2-small.jpg" alt="Portfolio Img" data-original="B2-small.jpg">
+                <a href="/img/O1.jpg" data-lightbox="gallery">
+                    <img src="/img/O1.jpg" alt="fields">
+                </a>
             </div>
             <div class="portfolio__div">
-                <img class="portfolio__img" src="/img/B3-small.jpg" alt="Portfolio Img" data-original="B3-small.jpg">
+                <a href="/img/O3.jpg" data-lightbox="gallery">
+                    <img src="/img/O3.jpg" alt="fields">
+                </a>
             </div>
         </div>
-
-        <div class="portfolio__modal">
-            <img src="/img/B1-small.jpg" alt="" class="portfolio__full-img">
-        </div>
-
+        <a id="gallery-btn" class="btn-big" href="examples.html" target="_blank">WANT TO SEE MORE?</a>
     </section>
 
 
@@ -303,10 +304,6 @@
 
 
     </section>
-
-
-
-
 
 
     <!-- FAQ SECTIONS -->
@@ -382,28 +379,6 @@
             <img src="./img/upwork.png" alt="Upwork Image">
         </div>
 
-        <!-- <h2 class="upwork__subtitle">CLIENTS WE WORKED WITH</h2> -->
-
-        <!-- SLIDER -->
-        <!-- <div id="container__slider"> -->
-        <!-- <section class="customer-logos slider"> -->
-        <!-- <div class="slide"><img src="./img/Clients logo/10.png"></div> -->
-        <!-- <div class="slide"><img src="./img/Clients logo/1.png"></div> -->
-        <!-- <div class="slide"><img src="./img/Clients logo/8.png"></div> -->
-        <!-- <div class="slide"><img src="./img/Clients logo/2.png"></div> -->
-        <!-- <div class="slide"><img src="./img/Clients logo/7.png"></div> -->
-        <!-- <div class="slide"><img src="./img/Clients logo/6.png"></div> -->
-        <!-- <div class="slide"><img src="./img/Clients logo/5.png"></div> -->
-        <!-- <div class="slide"><img src="./img/Clients logo/13.png"></div> -->
-        <!-- <div class="slide"><img src="./img/Clients logo/14.png"></div> -->
-        <!-- <div class="slide"><img src="./img/Clients logo/12.png"></div> -->
-        <!-- <div class="slide"><img src="./img/Clients logo/3.png"></div> -->
-        <!-- <div class="slide"><img src="./img/Clients logo/11.png"></div> -->
-        <!-- <div class="slide"><img src="./img/Clients logo/9.png"></div> -->
-        <!-- <div class="slide"><img src="./img/Clients logo/15.png"></div> -->
-        <!-- </section> -->
-        <!-- </div> -->
-
 
         <h2 class="upwork__subtitle">TESTIMONIALS</h2>
 
@@ -441,7 +416,7 @@
                 <p class="pushing__paragraph">Assigning social media responsibilities to an agency will save you and
                     your
                     employess time that can be spent focusing on other areas of your businesss.</p>
-                <a href="/survey.html" class="pushing__btn btn-big">Start 7 Day Trial</a>
+                <a href="/survey.html" class="pushing__btn btn-big" target="_blank">Start 7 Day Trial</a>
             </div>
         </div>
     </section>
@@ -472,37 +447,7 @@
     </footer>
 
     <script src="/js/app.js"></script>
-    <!-- Jquery -->
-    <!-- <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script> -->
-    <!-- Slick Carousel -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script> -->
-    <!-- Bootstrap JS -->
-    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
-
-    <!-- <script>
-        $(document).ready(function () {
-            $('.customer-logos').slick({
-                slidesToShow: 6,
-                slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 500,
-                arrows: false,
-                dots: false,
-                pauseOnHover: false,
-                responsive: [{
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 4
-                    }
-                }, {
-                    breakpoint: 520,
-                    settings: {
-                        slidesToShow: 3
-                    }
-                }]
-            });
-        });
-    </script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
 </body>
 
 </html>
