@@ -5,135 +5,222 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="https://www.zanmedia.net/FavLogo.ico" />
     <link rel="stylesheet" href="/css/_pricing.css">
+    <link rel="icon" type="image/png" href="https://www.zanmedia.net/FavLogo.ico" />
     <title>ZANMEDIA - Pricing</title>
 </head>
 
 <body>
-
-    <nav class="navbar">
-        <img class="navbar__logo" src="../img/Logo.png" alt="Logo">
-
-        <!-- Hide all navigation except logo -->
-        <ul style="visibility: hidden;" class="navigation">
-            <li class="navigation__item"><a class="navigation__link" href="#header">Home</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="#pricing">Pricing</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="#portfolio">Examples</a></li>
-        </ul>
-        <!-- Hide all navigation except logo -->
-        <a style="visibility: hidden;" class="navbar__btn btn-small"
-            href="https://www.upwork.com/o/profiles/users/~01735341f7777f861f/" target="_blank">Get
-            Started</a>
-    </nav>
-
-    <!-- <section class="pricing__top">
-        <a class="btn-small btn-privacy" href="/index.html"> <img src="/img/left.png" alt="back Icon">BACK
-        </a>
-    </section> -->
-
-
-    <!-- Pricing Section  -->
-    <section class="pricing section">
-        <h4 class="pricing__title">SIMPLE PRICING</h4>
-        <h2 class="pricing__subtitle" id="pricing">Chose a plan that fits your requirements.</h2>
-
-        <div class="pricing__grid">
-            <!-- Standard  -->
-            <div class="pricing__item pricing__Standard">
-                <h5 class="pricing__plan">Standard</h5>
-                <h1 class="pricing__pricing">$497
-                </h1>
-                <p class="pricing__monthly">Monthly</p>
-                <h5 class="pricing__weekly">3 Posts Per Week</h5>
-                <p class="pricing__feature">✔ Facebook</p>
-                <p class="pricing__feature">✔ LinkedIn</p>
-                <p class="pricing__feature">✔ Instagram</p>
-                <p class="pricing__feature">✔ Twitter</p>
-                <p class="pricing__feature">✔ Scheduling</p>
-                <p class="pricing__feature">✔ 1 Monthly revision</p>
-                <p class="pricing__feature">✔ Boost Ad Management</p>
-                <p class="pricing__feature">✔ Social Media Reporting</p>
-                <p class="pricing__feature">✔ Content in your branding</p>
-                <p class="pricing__feature">✔ Your personal dashboard</p>
-                <p class="pricing__feature">✔ Custom-tailored content</p>
-                <p class="pricing__feature">✔ Communication Via Slack</p>
-                <p class="pricing__feature">✔ Weekly social media videos</p>
-                <div id="pricingBtn__parent">
-                    <a id="pricing-btn" class="btn-small" href="/survey.html" target="_blank">Start 7 Day Trial</a>
-                </div>
-
-            </div>
-            <!-- Plus  -->
-            <div class="pricing__item pricing__Plus">
-                <h5 class="pricing__plan">Plus</h5>
-                <h1 class="pricing__pricing">$597
-                </h1>
-                <p class="pricing__monthly">Monthly</p>
-                <h5 class="pricing__weekly">5 Posts Per Week</h5>
-                <p class="pricing__feature">✔ Facebook</p>
-                <p class="pricing__feature">✔ LinkedIn</p>
-                <p class="pricing__feature">✔ Instagram</p>
-                <p class="pricing__feature">✔ Twitter</p>
-                <p class="pricing__feature">✔ Scheduling</p>
-                <p class="pricing__feature">✔ 1 Monthly revision</p>
-                <p class="pricing__feature">✔ Boost Ad Management</p>
-                <p class="pricing__feature">✔ Social Media Reporting</p>
-                <p class="pricing__feature">✔ Content in your branding</p>
-                <p class="pricing__feature">✔ Your personal dashboard</p>
-                <p class="pricing__feature">✔ Custom-tailored content</p>
-                <p class="pricing__feature">✔ Communication Via Slack</p>
-                <p class="pricing__feature">✔ Weekly social media videos</p>
-                <div id="pricingBtn__parent">
-                    <a id="pricing-btn" class="btn-small" href="/survey.html" target="_blank">Start 7 Day Trial</a>
-                </div>
-
-            </div>
-            <!-- Premium  -->
-            <div class="pricing__item pricing__Premium">
-                <h5 class="pricing__plan">Premium</h5>
-                <h1 class="pricing__pricing">$697
-                </h1>
-                <p class="pricing__monthly">Monthly</p>
-                <h5 class="pricing__weekly">7 Posts Per Week</h5>
-                <p class="pricing__feature">✔ Facebook</p>
-                <p class="pricing__feature">✔ LinkedIn</p>
-                <p class="pricing__feature">✔ Instagram</p>
-                <p class="pricing__feature">✔ Twitter</p>
-                <p class="pricing__feature">✔ Scheduling</p>
-                <p class="pricing__feature">✔ 1 Monthly revision</p>
-                <p class="pricing__feature">✔ Boost Ad Management</p>
-                <p class="pricing__feature">✔ Social Media Reporting</p>
-                <p class="pricing__feature">✔ Content in your branding</p>
-                <p class="pricing__feature">✔ Your personal dashboard</p>
-                <p class="pricing__feature">✔ Custom-tailored content</p>
-                <p class="pricing__feature">✔ Communication Via Slack</p>
-                <p class="pricing__feature">✔ Weekly social media videos</p>
-                <div id="pricingBtn__parent">
-                    <a id="pricing-btn" class="btn-small" href="/survey.html" target="_blank">Start 7 Day Trial</a>
-                </div>
-            </div>
+    <!-- Header  -->
+    <header class="header">
+        <div class="header__content">
+            <p>ZANMEDIA</p>
+            <h1>Social Media Management & Follower Growth
+            </h1>
         </div>
+    </header>
+
+    <section class="purchase">
+        <h2 class="purchase__subtitle">Thank you for your Interest in our Services
+        </h2>
+
+        <!-- Form Container -->
+        <div class="container">
+            <form name="content" netlify method='post' enctype='multipart/form-data' action="/Slack">
+                <p class="purchase__formTitle">
+                    Content Creation & Publishing Packages
+                </p>
+
+                <div class="form-group">
+                    <label for="name" style="padding-top: 10px" id="name-label">Name</label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Enter your Name"
+                        required />
+                </div>
+
+                <div class="form-group">
+                    <label for="email" id="email-label">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email"
+                        required />
+                </div>
+
+                <div class="form-group">
+                    <label for="company" id="name-label">Company</label>
+                    <input type="text" name="company" id="company" class="form-control"
+                        placeholder="Enter your Company Name" required />
+                </div>
+
+                <div class="form-group">
+                    <label id="label">Content Creation & Publishing Packages
+                    </label>
+                    <label class="label__speacial">
+                        <input name="Content3timesperweek($497/m)" value="497" type="checkbox" class="input-checkbox"
+                            onclick='chkcontrol()' />3
+                        times
+                        per week ($497/m)
+                    </label>
+                    <label class="label__speacial">
+                        <input name="Content5timesperweek($547/m)" value="547" type="checkbox" class="input-checkbox"
+                            onclick='chkcontrol()' />5 times
+                        per week ($547/m)
+                    </label>
+                    <label class="label__speacial">
+                        <input name="Content7timesperweek($697/m)" value="697" type="checkbox" class="input-checkbox"
+                            onclick='chkcontrol()' />7 times
+                        per week ($697/m)
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label for="interested" id="label">Are you interested in any add-ons? (IG Engagement, IG Followers,
+                        FB
+                        Followers, etc.) </label>
+                    <label class="label__speacial">
+                        <input name="interested" value="yes" type="radio" class="input-radio" onclick='YesOrNo()' />Yes
+                    </label>
+                    <label class="label__speacial">
+                        <input name="interested" value="no" type="radio" class="input-radio" onclick='YesOrNo()' />No
+                    </label>
+                </div>
+
+                <div class="userChoice">
+                    <div class="form-group">
+                        <label id="label">Instagram Growth Service - Organic
+                        </label>
+                        <p class="inline__passages">Includes:</p>
+                        <ul class="inline__ul">
+                            <li class="inline__li">Chat w/ People. Follow Unfollow. Like Content.
+                            </li>
+                            <li class="inline__li">Stories (story made out of post for that day)
+                            </li>
+                            <li class="inline__li">DM / Comment Management for IG (up to 20 comments / DMs per day)
+                            </li>
+                            <li class="inline__li last-li">Optional: Add $150 to manage all social channels
+                            </li>
+                        </ul>
+                        <label class="label__speacial">
+                            <input name="InstagramEngagement-Organic3x'sPerWeek($300/m)" value="300" type="checkbox"
+                                class="input-checkbox" onclick='chkcontrol()' />Instagram
+                            Engagement - Organic 3x's Per Week ($300/m)
+                        </label>
+                        <label class="label__speacial">
+                            <input name="InstagramEngagement-Organic5x'sPerWeek($400/m)" value="400" type="checkbox"
+                                class="input-checkbox" onclick='chkcontrol()' />Instagram
+                            Engagement - Organic 5x's Per Week ($400/m)
+                        </label>
+                        <label class="label__speacial">
+                            <input name="InstagramEngagement-Organic5x'sPerWeek($150/m)" value="150" type="checkbox"
+                                class="input-checkbox" onclick='chkcontrol()' />Add Comment
+                            / DM management on ALL social channels ($150/m)
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="facebook" id="label">Facebook Page Growth Service - Paid
+                        </label>
+                        <p class="inline__passages">Includes:</p>
+                        <ul class="inline__ul">
+                            <li class="inline__li">Accomplished through Facebook Ads
+                            </li>
+                            <li class="inline__li">Includes split testing
+                            </li>
+                            <li class="inline__li">Ad Budget is set by client (minimum of $50 suggested)
+                            </li>
+                            <li class="inline__li">Target of page like for 50 cents or less
+                            </li>
+                        </ul>
+                        <label class="label__speacial">
+                            <input name="Facebookpagegrowthservice($100/m)" value="100" type="checkbox"
+                                class="input-checkbox" onclick='chkcontrol()' />Facebook
+                            page growth service ($100/m)</label>
+                    </div>
+
+                    <div class="form-group">
+                        <label id="label">Instagram / Facebook Engagement - Paid </label>
+                        <p class="inline__passages">Includes:</p>
+                        <ul class="inline__ul">
+                            <li class="inline__li">1x per week, all IG posts from previous week are boosted
+                            </li>
+                            <li class="inline__li">This is performed through the customer’s business manager. The budget
+                                for
+                                the ads is determined
+                                by the client and billed
+                                directly by Facebook.
+                            </li>
+                        </ul>
+
+                        <label class="label__speacial">
+                            <input name="AddIGEngagement-Paidfor$100/m" value="100" type="checkbox"
+                                class="input-checkbox" onclick='chkcontrol()' />Add
+                            IG Engagement - Paid for $100/m
+                        </label>
+
+                        <label class="label__speacial">
+                            <input name="AddFBEngagement-Paidfor$100/m" value="100" type="checkbox"
+                                class="input-checkbox" onclick='chkcontrol()' />Add
+                            FB Engagement - Paid for $100/m</label>
+
+                        <label class="label__speacial">
+                            <input name="Iwouldliketobundlebothofthesefor$150/m" value="150" type="checkbox"
+                                class="input-checkbox" onclick='chkcontrol()' />I
+                            would like to bundle both of these for $150/m</label>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label id="label" for="InstaStories">Instagram Stories
+                        </label>
+                        <p class="inline__passages">Includes:</p>
+                        <ul class="inline__ul">
+                            <li class="inline__li">Stories are a version of the post that goes live that day </li>
+                        </ul>
+                        <label class="label__speacial">
+                            <input name="InstaStories3x" value="150" type="checkbox" class="input-checkbox"
+                                onclick='chkcontrol()' />
+                            3x' s Per Week ($150/m)</label>
+                        <label class="label__speacial">
+                            <input name="InstaStories5x" value="250" type="checkbox" class="input-checkbox"
+                                onclick='chkcontrol()'' />
+                        5x' s Per Week ($250/m)</label>
+                            <label class="label__speacial">
+                                <input name="InstaStories7x" value="350" type="checkbox" class="input-checkbox"
+                                    onclick='chkcontrol()' />
+                                7x' s Per Week ($350/m)</label>
+                    </div>
+
+                    <div class="form-group">
+                        <label id="label">Comment / Direct Message Management - All Platforms
+                        </label>
+                        <p class="inline__passages">Includes:</p>
+                        <label class="label__speacial">
+                            <input name="commentDM5x" value="300" type="checkbox" class="input-checkbox"
+                                onclick='chkcontrol()' />Add
+                            Up to 20 comments / DMs per day - 5x’s per week ($300/m)</label>
+                        <label class="label__speacial">
+                            <input name="commentDMPerDay" value="450" type="checkbox" class="input-checkbox"
+                                onclick='chkcontrol()' />Add
+                            More than 20 comments / DM's Per Day ($450/m)</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label id="label">Your monthly price *
+                    </label>
+                    <label class="label__speacial">
+                        <input name="price" id="price" value="0" />USD
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">
+                        <p style="color: white">Submit</p>
+                    </button>
+                </div>
+            </form>
+        </div>
+
     </section>
 
-    <footer class="footer">
-
-        <div class="footer__top">
-            <div class="footer__policies">
-                <p class="footer__terms"><a href="/pages/Terms and Conditions.html">Terms and Conditions</a></p>
-                <p class="footer__terms"><a href="/pages/Privacy.html">Privacy Policy</a></p>
-                <p class="footer__terms"><a href="/pages/Refund.html">Refund Policy</a></p>
-                <p class="footer__terms"><a href="/pages/Delivery.html">Delivery Policy</a></p>
-            </div>
-
-            <p class="footer__help">Need Help? Email Us: Support@zanmedia.net
-            </p>
-        </div>
-
-        <p class="footer__rights">2021 All Rights Reserved | ZANMEDIA
-        </p>
-    </footer>
-
+    <script src="/js/pricing.js"></script>
 </body>
 
 </html>
