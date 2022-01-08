@@ -356,6 +356,64 @@
   font-family: ridley_groteskregular;
 }
 
+/* --------------------------------------- */
+/* --------------------------------------- */
+/* Additional Services Section */
+/* --------------------------------------- */
+/* --------------------------------------- */
+/* --------------------------------------- */
+.additional {
+  text-align: center;
+}
+
+.additional__subtitle {
+  font-size: 3.3rem;
+  color: #2a2a2a;
+  margin-bottom: 6rem;
+}
+
+.additional__grid {
+  max-width: 110rem;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+  grid-gap: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 1150px) {
+  .additional__grid {
+    margin: 0rem 2rem;
+    margin-bottom: 4rem;
+    max-width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  }
+}
+
+.additional__item {
+  border-radius: 10px 10px 10px 10px;
+  background-color: #ffffff;
+  padding: 3rem 3rem;
+  box-shadow: 0px 10px 24px 6px rgb(0 0 0 / 6%);
+}
+
+.additional__paragraph {
+  color: #2a2a2a;
+}
+
+.additional__subParagraph {
+  margin-top: 1.3rem;
+  font-size: 1.5rem;
+  font-family: ridley_groteskregular;
+  line-height: 1.7;
+}
+
+.additional__item > img {
+  filter: invert(67%) sepia(46%) saturate(3974%) hue-rotate(323deg)
+    brightness(90%) contrast(110%);
+  margin-bottom: 2.5rem;
+}
+
 /* +++++++++++++++++++++++++++++++++++++++++++++= */
 /* +++++++++++++++++++++++++++++++++++++++++++++= */
 /* +++++++++++++++++++++++++++++++++++++++++++++= */
