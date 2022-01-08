@@ -254,6 +254,10 @@
 .features {
   text-align: center;
 }
+.additional__alert {
+  font-family: ridley_groteskregular;
+  font-size: 1.5rem;
+}
 
 .features__subtitle {
   margin-bottom: 4rem;
@@ -369,7 +373,11 @@
 .additional__subtitle {
   font-size: 3.3rem;
   color: #2a2a2a;
-  margin-bottom: 6rem;
+  margin-bottom: 1.5rem;
+}
+
+.additional__alert {
+  margin-bottom: 4rem;
 }
 
 .additional__grid {
