@@ -69,8 +69,8 @@ header {
 
 .appointment__passage {
   font-weight: 400;
-  max-width: 105rem;
-  font-size: 3rem;
+  max-width: 81rem;
+  font-size: 2.7rem;
   word-spacing: 2px;
   margin: auto;
   margin-bottom: 3rem;
@@ -85,7 +85,7 @@ header {
 
 .appointment__subtitle {
   font-weight: 400;
-  font-size: 3rem;
+  font-size: 2.4rem;
   margin-bottom: 1rem;
 }
 
@@ -197,7 +197,7 @@ header {
 
 .testimonialls__Subpassage {
   font-weight: 400;
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   margin: 0rem auto 1.5rem auto;
   max-width: 70rem;
   text-align: left;
@@ -232,6 +232,7 @@ header {
 
 .signature > img {
   width: 23rem;
+  margin-bottom: 2rem;
 }
 
 #sssss {
