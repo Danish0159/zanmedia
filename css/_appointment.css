@@ -109,7 +109,7 @@ body {
 .appointment__title,
 .appointment__title2 {
   font-weight: 700;
-  font-size: 2.8rem;
+  font-size: 3.4rem;
   margin-bottom: 3rem;
 }
 
@@ -119,8 +119,8 @@ body {
 
 .appointment__passage {
   font-weight: 400;
-  max-width: 81rem;
-  font-size: 2.7rem;
+  max-width: 85rem;
+  font-size: 2.9em;
   word-spacing: 2px;
   margin: auto;
   margin-bottom: 3rem;
@@ -135,8 +135,9 @@ body {
 
 .appointment__subtitle {
   font-weight: 400;
-  font-size: 2.4rem;
-  margin-bottom: 1rem;
+  font-size: 2.6rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .appointment__video {
@@ -175,7 +176,7 @@ body {
   color: #fff;
   text-decoration: none;
   font-size: 1.7rem;
-  margin-bottom: 2rem;
+  margin: 2rem 0rem;
   border-radius: 5px;
 }
 
@@ -249,7 +250,7 @@ body {
 .testimonialls__Subpassage {
   font-weight: 400;
   font-size: 2.4rem;
-  margin: 0rem auto 1.5rem auto;
+  margin: 1rem auto 1.5rem auto;
   max-width: 70rem;
   text-align: left;
 }

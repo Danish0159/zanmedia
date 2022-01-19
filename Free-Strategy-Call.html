@@ -44,27 +44,24 @@
 
 <body>
     <!-- Messenger Chat plugin Code -->
-    <div id="fb-root"></div>
+    <!-- <div id="fb-root"></div> -->
 
     <!-- Your Chat plugin code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
-
-    <script>
+    <!-- <div id="fb-customer-chat" class="fb-customerchat"> -->
+    <!-- </div> -->
+    <!-- <script>
         var chatbox = document.getElementById('fb-customer-chat');
         chatbox.setAttribute("page_id", "108138627275686");
         chatbox.setAttribute("attribution", "biz_inbox");
-    </script>
-
+    </script> -->
     <!-- Your SDK code -->
-    <script>
+    <!-- <script>
         window.fbAsyncInit = function () {
             FB.init({
                 xfbml: true,
                 version: 'v12.0'
             });
         };
-
         (function (d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0];
             if (d.getElementById(id)) return;
@@ -72,12 +69,9 @@
             js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
-    </script>
-
-
+    </script> -->
     <nav class="navbar">
         <img class="navbar__logo" src="../img/Logo.png" alt="Logo">
-
         <!-- Hide all navigation except logo -->
         <ul style="visibility: hidden;" class="navigation">
             <li class="navigation__item"><a class="navigation__link" href="#header">Home</a></li>
@@ -116,6 +110,9 @@
                 </div>
             </div>
         </div>
+        <a class="appointment__btn" href="https://www.zanmedia.net/schedule" target="_blank">
+            <div class="appointment__btn-top">Schedule Free Call</div>
+        </a>
     </section>
     <!-- ------------------------------------------------------ -->
     <!-- ------------------------------------------------------ -->
@@ -137,6 +134,9 @@
         <div class="testmoniall__img">
             <img src="/img/4.PNG" alt="">
         </div>
+        <a class="appointment__btn" href="https://www.zanmedia.net/schedule" target="_blank">
+            <div class="appointment__btn-top">Schedule Free Call</div>
+        </a>
         <p id="talk__soon" class="testimonialls__Subpassage testimonialls__PS ">
             Talk Soon,
         </p>
@@ -147,24 +147,16 @@
         <div class="signature">
             <img src="/img/signature.png" alt="">
         </div>
-
-        <a class="appointment__btn" href="https://www.zanmedia.net/schedule" target="_blank">
-            <div class="appointment__btn-top">Schedule Free Call</div>
-        </a>
-        <!-- <p class="support">Need Help? Email Us: Support@zanmedia.net</p> -->
     </section>
-    <!-- ------------------------------------------------------ -->
     <!-- ------------------------------------------------------ -->
     <!--Footer Section -->
     <!-- ------------------------------------------------------ -->
-    <!-- ------------------------------------------------------ -->
-    <!-- <footer class="footer">
+    <footer class="footer">
         <h2 class="footer__title">This site is not a
             part of
             the Facebook website or Facebook Inc. Additionally this site is not
             endorsed by Facebook in any way. Facebook is a trademark of FACEBOOK. Inc.</h2>
-    </footer> -->
-
+    </footer>
 </body>
 
 </html>
