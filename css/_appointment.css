@@ -1,5 +1,6 @@
 /* The global css file is not included here, 
-It has a seperate fonts and code.
+It has Roboto font
+
 */
 * {
   margin: 0;
@@ -29,7 +30,56 @@ body {
 /* Navigation */
 /* ---------------------------------- */
 /* ---------------------------------- */
-header {
+
+.navbar {
+  max-width: 122rem;
+  padding: 0 2rem;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.navbar__logo {
+  height: 9.2rem;
+}
+@media only screen and (max-width: 850px) {
+  .navbar__logo {
+    height: 8rem;
+  }
+}
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style: none;
+}
+@media only screen and (max-width: 850px) {
+  .navigation {
+    display: none;
+  }
+}
+.navigation__item:not(:last-of-type) {
+  margin-right: 5rem;
+}
+.navigation__link {
+  color: #2a2a2a;
+  text-decoration: none;
+  font-size: 2rem;
+}
+.navigation__help {
+  max-width: 15rem;
+}
+
+/* header {
   background-color: #2a2a2a;
 }
 
@@ -48,7 +98,7 @@ header {
   .navbar__logo {
     height: 8rem;
   }
-}
+} */
 
 /* Appointment section */
 .appointment {
@@ -121,7 +171,7 @@ header {
 .appointment__btn {
   background-color: #ff5e3a;
   display: inline-block;
-  padding: 1.6rem 3.8rem;
+  padding: 1.6rem 3.4rem;
   color: #fff;
   text-decoration: none;
   font-size: 1.7rem;
@@ -130,10 +180,11 @@ header {
 }
 
 .appointment__btn-top {
-  font-weight: 700;
-  font-size: 3.2rem;
+  font-weight: 500;
+  font-size: 2.7rem;
   margin-bottom: 0.2rem;
 }
+
 .appointment__btn-bottom {
   font-weight: 400;
   font-size: 1rem;

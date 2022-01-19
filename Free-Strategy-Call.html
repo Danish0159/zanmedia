@@ -7,24 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZANMEDIA | Free-Strategy-Call</title>
     <link rel="icon" type="image/png" href="https://www.zanmedia.net/FavLogo.ico" />
-
     <link rel="stylesheet" href="/css/_appointment.css">
     <link rel="icon" type="image/png" href="https://www.zanmedia.net/FavLogo.ico" />
-
-
     <!-- Wistia Library -->
     <script src="https://fast.wistia.com/embed/medias/iw0eh3m6yv.jsonp" async></script>
     <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
-
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-
-
-
     <!-- Facebook Pixel Code -->
     <script>
         !function (f, b, e, v, n, t, s) {
@@ -47,55 +40,61 @@
             &noscript=1" />
     </noscript>
     <!-- End Facebook Pixel Code -->
-
-    <!-- Async Code -->
-    <script>
-        "use strict";
-        !function () {
-            var t = window.driftt = window.drift = window.driftt || [];
-            if (!t.init) {
-                if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
-                t.invoked = !0, t.methods = ["identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on"],
-                    t.factory = function (e) {
-                        var n = Array.prototype.slice.call(arguments);
-                        return function () {
-                            return n.unshift(e), t.push(n), t;
-                        };
-                    }, t.methods.forEach(function (e) {
-                        t[e] = t.factory(e);
-                    }), t.load = function (t) {
-                        var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
-                        o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
-                        var i = document.getElementsByTagName("script")[0];
-                        i.parentNode.insertBefore(o, i);
-                    };
-            }
-        }();
-        drift.SNIPPET_VERSION = '0.3.1';
-        drift.load('9fcrbwfw29sh');
-    </script>
-    <!-- End of Async Drift Code -->
-
-
 </head>
 
 <body>
+    <!-- Messenger Chat plugin Code -->
+    <div id="fb-root"></div>
 
-    <header>
-        <nav class="navbar">
-            <img class="navbar__logo" src="/img/Logo1.png" alt="Logo">
-        </nav>
-    </header>
+    <!-- Your Chat plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "108138627275686");
+        chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v12.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
 
 
+    <nav class="navbar">
+        <img class="navbar__logo" src="../img/Logo.png" alt="Logo">
+
+        <!-- Hide all navigation except logo -->
+        <ul style="visibility: hidden;" class="navigation">
+            <li class="navigation__item"><a class="navigation__link" href="#header">Home</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#pricing">Pricing</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#portfolio">Examples</a></li>
+        </ul>
+        <!-- Hide all navigation except logo -->
+        <a style="visibility: hidden;" class="navbar__btn btn-small"
+            href="https://www.upwork.com/o/profiles/users/~01735341f7777f861f/" target="_blank">Get
+            Started</a>
+    </nav>
     <!-- ------------------------------------------------------ -->
     <!-- ------------------------------------------------------ -->
     <!-- Appointment Section -->
     <!-- ------------------------------------------------------ -->
     <!-- ------------------------------------------------------ -->
-
     <section class="appointment">
-
         <h2 class="appointment__title">Social media for $129 per month. Done for you:</h2>
         <p class="appointment__passage">
             Here's How We <u> <span class="appointment__span">Create Quality Social Media Content</span></u> and
@@ -103,7 +102,6 @@
         </p>
         <p class="appointment__subtitle">Watch The Video Below</p>
         <div class="appointment__video">
-
             <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
                 <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
                     <div class="wistia_embed wistia_async_iw0eh3m6yv videoFoam=true"
@@ -119,7 +117,6 @@
             </div>
         </div>
     </section>
-
     <!-- ------------------------------------------------------ -->
     <!-- ------------------------------------------------------ -->
     <!-- Testimonialls Section -->
@@ -140,12 +137,6 @@
         <div class="testmoniall__img">
             <img src="/img/4.PNG" alt="">
         </div>
-        <div class="testmoniall__img">
-            <img src="/img/5.PNG" alt="">
-        </div>
-        <div class="testmoniall__img">
-            <img src="/img/6.PNG" alt="">
-        </div>
         <p id="talk__soon" class="testimonialls__Subpassage testimonialls__PS ">
             Talk Soon,
         </p>
@@ -158,24 +149,22 @@
         </div>
 
         <a class="appointment__btn" href="https://www.zanmedia.net/schedule" target="_blank">
-            <div class="appointment__btn-top"> Click Here To Apply </div>
-            <div class="appointment__btn-bottom">Yes! I’d like to see potential social media
-                growth <br> and expand my reach</div>
+            <div class="appointment__btn-top">Schedule Free Call</div>
         </a>
-
-        <p class="support">Need Help? Email Us: Support@zanmedia.net</p>
+        <!-- <p class="support">Need Help? Email Us: Support@zanmedia.net</p> -->
     </section>
     <!-- ------------------------------------------------------ -->
     <!-- ------------------------------------------------------ -->
     <!--Footer Section -->
     <!-- ------------------------------------------------------ -->
     <!-- ------------------------------------------------------ -->
-    <footer class="footer">
+    <!-- <footer class="footer">
         <h2 class="footer__title">This site is not a
             part of
             the Facebook website or Facebook Inc. Additionally this site is not
             endorsed by Facebook in any way. Facebook is a trademark of FACEBOOK. Inc.</h2>
-    </footer>
+    </footer> -->
+
 </body>
 
 </html>
