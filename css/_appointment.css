@@ -20,7 +20,7 @@ html {
   scroll-behavior: smooth;
 }
 
-.app-container {
+body {
   font-family: "Roboto", sans-serif;
   background-color: #fafafade;
   color: #2a2a2a;
