@@ -596,21 +596,7 @@
   display: block;
   height: 100%;
 }
-.pushing__btn:link,
-.pushing__btn:visited {
-  -ms-flex-item-align: end;
-  align-self: flex-end;
-  margin-right: 4rem;
-  padding: 0.8rem 1.6rem;
-  font-size: 2.8rem;
-}
-@media only screen and (max-width: 373px) {
-  .pushing__btn:link,
-  .pushing__btn:visited {
-    margin-right: 0;
-    align-self: center;
-  }
-}
+
 /* +++++++++++++++++++++++++++++++++++++++++++++= */
 /* +++++++++++++++++++++++++++++++++++++++++++++= */
 /* +++++++++++++++++++++++++++++++++++++++++++++= */
