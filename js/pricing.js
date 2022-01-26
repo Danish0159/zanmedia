@@ -12,7 +12,6 @@ function chkcontrol() {
     price.value = sum;
 }
 
-
 let userChoice = document.querySelector('.userChoice');
 function YesOrNo() {
     if (document.content.interested[0].checked) {
@@ -22,4 +21,3 @@ function YesOrNo() {
         userChoice.style.display = 'none';
     }
 }
-
