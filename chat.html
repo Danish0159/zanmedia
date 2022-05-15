@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://www.zanmedia.net/FavLogo.ico" />
+    <title>ZANMEDIA | Chat Room</title>
+    <!-- Fonts -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap">
+    <link rel="stylesheet" href="Montserrat:400,700&display=swap" media="print" onload="this.media='all'">
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date(); Tawk_API.embedded = 'tawk_61e96dd7b84f7301d32c0d54';
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/61e96dd7b84f7301d32c0d54/1g340dm0d';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: inherit;
+        }
+
+        html {
+            box-sizing: border-box;
+            font-size: 62.5%;
+        }
+
+        @media only screen and (max-width: 68.75em) {
+            html {
+                font-size: 50%;
+            }
+        }
+
+        body {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 400;
+            /* line-height: 1.6; */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
+        }
+
+        .chat {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        @media only screen and (max-width: 56.25em) {
+            .chat {
+                flex-direction: column;
+            }
+        }
+
+        .chat__left {
+            background-color: #FAFAFA;
+            flex: 0 0 32%;
+            padding: 1.7rem 3rem;
+        }
+
+        @media only screen and (max-width: 56.25em) {
+            .chat__left {
+                /* display: none; */
+            }
+        }
+
+        .chat__left--logo {
+            width: 10rem;
+        }
+
+        .chat__left--content {
+            padding: 0rem 1rem;
+        }
+
+
+        @media only screen and (max-width: 56.25em) {
+            .chat__left--content {
+                display: none;
+            }
+        }
+
+
+        .chat__left--content>* {
+            margin: 1.5rem 0rem;
+        }
+
+        .chat__right {
+            background: url(https://cdn.msgsndr.com/location%2F6EDOdLakvvzIP3sBhfgU%2Fimages%2F1c2cce7a-e953-4694-8aed-e08e14b037e5.png?alt=media&amp;token=103dac69-25e8-4682-9ba8-5036099e86d6);
+            opacity: 1;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 3rem 0rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="chat">
+        <div class="chat__left">
+            <img class="chat__left--logo" src="img/logo.png" alt="Logo">
+            <div class="chat__left--content">
+                <p style="font-size: 1.5rem;">ZanMedia helping small businesses realize their investment.
+                </p>
+                <p style="font-size: 1.5rem;">Fredericksburg VA, Austin TX and Denver CO,VA, CO, TX,USA.
+                </p>
+            </div>
+        </div>
+        <div class="chat__right">
+            <div id='tawk_61e96dd7b84f7301d32c0d54'></div>
+        </div>
+    </div>
+</body>
+
+</html>
