@@ -1,0 +1,92 @@
+@import url(./_global.css);
+
+/* Slack 1 */
+.slack__section {
+  max-width: 90rem;
+  width: 100%;
+  margin: 7rem auto;
+  background-color: white;
+  border-radius: 8px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .slack__section {
+    margin: 0rem auto;
+  }
+}
+
+.slack {
+  padding: 5rem 6rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .slack {
+    padding: 5rem 2.3rem;
+  }
+}
+
+.slack__content{
+  margin-bottom: 6.5rem;
+  text-align: center;
+}
+
+.slack__social{
+  font-size: 2.2rem;
+  margin: 2.5rem 0rem;
+}
+
+.slack__paragraph {
+    font-family: ridley_groteskmedium, sans-serif;
+    margin: auto;
+    margin-top: 0.9rem;
+    margin-bottom: 3rem;
+}
+
+.slack__paragraph-span {
+  font-family: ridley_groteskregular, sans-serif !important;
+  font-size: 17px;
+}
+
+.slack__logo {
+  width: 10rem;
+  margin-top: 4rem;
+  display: block;
+  margin-left: -27px;
+  margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .slack__logo {
+    margin-left: -23px;
+  }
+}
+
+.mb{
+    margin-bottom: -2.5rem;
+}
+
+#pilot-logo{
+    width: 5.5rem;  
+    margin-left: -8px;
+}
+
+.slack__btn {
+  font-family: ridley_groteskmedium, sans-serif !important;
+  background-color: #0073f7;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  display: block;
+  font-size: 17px;
+  text-align: center;
+  padding: 13px 0px;
+  width: 180px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.slack__heading{
+  padding:2rem .6rem;
+  background-color: #ECEDF3;
+}
