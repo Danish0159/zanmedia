@@ -40,6 +40,10 @@
     margin: auto;
     margin-top: 0.9rem;
     margin-bottom: 3rem;
+  }
+  
+  .slack__paragraph-bold{
+  font-family: ridley_groteskbold;
 }
 
 .slack__paragraph-span {
