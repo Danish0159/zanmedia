@@ -22,7 +22,7 @@
     <!-- LightBox CSS -->
     <link rel="stylesheet" href="/css/lightbox.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>ZANMEDIA</title>
+    <!-- <title>ZANMEDIA</title> -->
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">
         var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
@@ -74,22 +74,31 @@
 
     <!-- Pricing Section  -->
     <section class="pricing section">
-        <!-- <h4 class="pricing__title">SIMPLE PRICING</h4> -->
         <h2 class="pricing__subtitle" id="pricing">Affordable Social Media Management <br> Packages</h2>
         <h3 class="pricing__alert">All pricing is per brand, per month</h3>
-        <div class="pricing__grid">
-            <!-- Standard  -->
+
+        <!--  Toggler -->
+        <label class="toggler toggler--is-active" id="filt-monthly">Standard Plans</label>
+        <div class="toggle">
+            <input type="checkbox" id="switcher" class="check">
+            <b class="b switch"></b>
+        </div>
+        <label class="toggler" id="filt-hourly">Plans with Video</label>
+
+        <!-- monthly = Standard Plans
+        hourly = = Plans with Video.
+        -->
+        <!-- Standard Plans -->
+        <div id="monthly" class="pricing__grid wrapper-full">
+            <!-- Business  -->
             <div class="pricing__item pricing__Standard">
                 <h5 class="pricing__plan">Business</h5>
-                <h1 class="pricing__pricing">$129
+                <h1 class="pricing__pricing">$299
                 </h1>
                 <p class="pricing__monthly">Monthly</p>
-                <h5 class="pricing__weekly">3 Posts Per Week</h5>
+                <h5 class="pricing__weekly">12 Posts Per Month</h5>
                 <p class="pricing__feature">✔ Up to 2 networks <img class="socil-icon" src="./img/fb.png"
                         alt="social-icons"> <img class="socil-icon" src="./img/ig.png" alt="social-icons"></p>
-                <!-- <p class="pricing__feature">✔ Facebook</p>
-                <p class="pricing__feature">+$20 Instagram/Twitter</p>
-                <p class="pricing__feature">✔ Custom-tailored content</p> -->
                 <p class="pricing__feature">✔ Content Scheduling</p>
                 <p class="pricing__feature">✔ Social Media Dashboard</p>
                 <p class="pricing__feature">✔ Chat and Support</p>
@@ -97,13 +106,13 @@
                     <a id="pricing-btn" class="btn-small" href="/pricing.html" target="_blank">Order Now</a>
                 </div>
             </div>
-            <!-- Plus  -->
+            <!-- Growth  -->
             <div class="pricing__item pricing__Plus">
                 <h5 class="pricing__plan">Growth</h5>
-                <h1 class="pricing__pricing">$179
+                <h1 class="pricing__pricing">$499
                 </h1>
                 <p class="pricing__monthly">Monthly</p>
-                <h5 class="pricing__weekly">5 Posts Per Week</h5>
+                <h5 class="pricing__weekly">20 Posts Per Month</h5>
                 <p class="pricing__feature">✔ Up to 2 networks <img class="socil-icon" src="./img/fb.png"
                         alt="social-icons"> <img class="socil-icon" src="./img/ig.png" alt="social-icons"></p>
                 <p class="pricing__feature">✔ Content Scheduling</p>
@@ -113,30 +122,45 @@
                     <a id="pricing-btn" class="btn-small" href="/pricing.html" target="_blank">Order Now</a>
                 </div>
             </div>
-            <!-- Premium  -->
-            <!-- <div class="pricing__item pricing__Premium">
-                <h5 class="pricing__plan">Premium</h5>
-                <h1 class="pricing__pricing">$697
+        </div>
+
+        <!-- Plans with Pricing  -->
+        <div id="hourly" class="pricing__grid wrapper-full hide">
+            <!-- Business  -->
+            <div class="pricing__item pricing__Standard">
+                <h5 class="pricing__plan">Business Plus</h5>
+                <h1 class="pricing__pricing">$369
                 </h1>
                 <p class="pricing__monthly">Monthly</p>
-                <h5 class="pricing__weekly">7 Posts Per Week</h5>
-                <p class="pricing__feature">✔ Facebook</p>
-                <p class="pricing__feature">✔ LinkedIn</p>
-                <p class="pricing__feature">✔ Instagram</p>
-                <p class="pricing__feature">✔ Twitter</p>
-                <p class="pricing__feature">✔ Scheduling</p>
-                <p class="pricing__feature">✔ Unlimited revisions</p>
-                <p class="pricing__feature">✔ Social Media Reporting</p>
-                <p class="pricing__feature">✔ Content in your branding</p>
-                <p class="pricing__feature">✔ Your personal dashboard</p>
-                <p class="pricing__feature">✔ Custom-tailored content</p>
-                <p class="pricing__feature">✔ Communication Via Slack</p>
-                <p class="pricing__feature">✔ Weekly social media videos</p>
+                <h5 class="pricing__weekly">12 Posts Per Month</h5>
+                <p class="pricing__feature">✔ Up to 2 networks <img class="socil-icon" src="./img/fb.png"
+                        alt="social-icons"> <img class="socil-icon" src="./img/ig.png" alt="social-icons"></p>
+                <p class="pricing__feature">✔ Content Scheduling</p>
+                <p class="pricing__feature">✔ Social Media Dashboard</p>
+                <p class="pricing__feature">✔ Chat and Support</p>
                 <div id="pricingBtn__parent">
                     <a id="pricing-btn" class="btn-small" href="/pricing.html" target="_blank">Order Now</a>
                 </div>
-            </div> -->
+            </div>
+            <!-- Growth  -->
+            <div class="pricing__item pricing__Plus">
+                <h5 class="pricing__plan">Growth Plus</h5>
+                <h1 class="pricing__pricing">$549
+                </h1>
+                <p class="pricing__monthly">Monthly</p>
+                <h5 class="pricing__weekly">20 Posts Per Month</h5>
+                <p class="pricing__feature">✔ Up to 2 networks <img class="socil-icon" src="./img/fb.png"
+                        alt="social-icons"> <img class="socil-icon" src="./img/ig.png" alt="social-icons"></p>
+                <p class="pricing__feature">✔ Content Scheduling</p>
+                <p class="pricing__feature">✔ Social Media Dashboard</p>
+                <p class="pricing__feature">✔ Chat and Support</p>
+                <div id="pricingBtn__parent">
+                    <a id="pricing-btn" class="btn-small" href="/pricing.html" target="_blank">Order Now</a>
+                </div>
+            </div>
         </div>
+
+
     </section>
 
     <!-- Additional Services Section  -->
@@ -365,6 +389,38 @@
     </footer>
     <script src="/js/app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
+
+    <!-- Toggler JS -->
+<script>
+    var e = document.getElementById("filt-monthly"),
+        d = document.getElementById("filt-hourly"),
+        t = document.getElementById("switcher"),
+        m = document.getElementById("monthly"),
+        y = document.getElementById("hourly");
+
+    e.addEventListener("click", function () {
+        t.checked = false;
+        e.classList.add("toggler--is-active");
+        d.classList.remove("toggler--is-active");
+        m.classList.remove("hide");
+        y.classList.add("hide");
+    });
+
+    d.addEventListener("click", function () {
+        t.checked = true;
+        d.classList.add("toggler--is-active");
+        e.classList.remove("toggler--is-active");
+        m.classList.add("hide");
+        y.classList.remove("hide");
+    });
+
+    t.addEventListener("click", function () {
+        d.classList.toggle("toggler--is-active");
+        e.classList.toggle("toggler--is-active");
+        m.classList.toggle("hide");
+        y.classList.toggle("hide");
+    });
+</script>
 </body>
 
 </html>
