@@ -122,9 +122,8 @@
   }
 }
 .pricing__grid {
-  max-width: 80rem;
+  max-width: 110rem;
   margin: auto;
-  margin-top: 2rem;
   text-align: left;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
@@ -134,29 +133,35 @@
   .pricing__grid {
     text-align: center;
     max-width: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    /* grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)); */
   }
 }
 .pricing__item {
-  padding: 4rem 2rem;
+  padding: 2rem 2rem;
   border-radius: 8px;
-  -webkit-box-shadow: 0 0 6px #888;
-  box-shadow: 0 0 6px #888;
+  /* -webkit-box-shadow: 0 0 6px #888; */
+  /* box-shadow: 0 0 6px #888; */
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 .pricing__item > * {
   margin-bottom: 0.7rem;
 }
-.pricing__item:hover {
+/* .pricing__item:hover {
   -webkit-box-shadow: 0 0 19px #888;
   box-shadow: 0 0 19px #888;
-}
+} */
 .pricing__Plus {
-  background-color: #f1eeedb4;
+  /* background-color: #f1eeedb4; */
+}
+.pricing__plan{
+  font-size: 2rem;
+}
+.pricing__weekly {
+  font-size: 2rem;
 }
 .pricing__pricing {
-  font-size: 5.5rem;
+  font-size: 4rem;
   margin-bottom: 1rem;
 }
 .pricing__monthly {
@@ -164,9 +169,10 @@
   font-size: 1.4rem;
   color: #fff;
   display: inline-block;
-  background-color: #2a2a2a;
+  background-color: #625f5f;
   padding: 0.4rem 0.5rem;
 }
+
 .pricing__weekly:after {
   content: " ";
   display: block;
@@ -185,8 +191,14 @@
 
 .pricing__feature {
   margin: 1.5rem;
+  border-bottom: 1px solid #d9d7d6b4;
+  padding: .5rem 0rem;
   font-size: 1.7rem;
 }
+.pricing__Hidden{
+  visibility: hidden;
+}
+
 
 /* +++++++++++++++++++++++++++++++++++++++++++++= */
 /* +++++++++++++++++++++++++++++++++++++++++++++= */
@@ -211,7 +223,7 @@
 }
 
 .toggler--is-active {
-  color: #f0684a;
+  color: #2A2A2A;
 }
 
 .b {
@@ -220,10 +232,10 @@
 
 .toggle {
   position: relative;
-  width: 67px;
-  height: 28px;
+  width: 42px;
+  height: 20px;
   border-radius: 100px;
-  background-color: #f0684a;
+  background-color: #2A2A2A;
   overflow: hidden;
   box-shadow: inset 0 0 2px 1px rgba(0, 0, 0, 0.05);
 }
@@ -743,7 +755,7 @@
   padding-bottom: 0;
 }
 .faq__grid {
-  max-width: 110rem;
+  max-width: 90rem;
   margin: auto;
 }
 .faq__title {
@@ -980,5 +992,5 @@
 }
 
 .socil-icon{
-  margin-bottom: -4px;
+  margin-bottom: -6px;
 }

@@ -268,6 +268,7 @@ p {
   -ms-flex-align: center;
   align-items: center;
   list-style: none;
+  margin-left: 11rem;
 }
 @media only screen and (max-width: 850px) {
   .navigation {
@@ -284,4 +285,11 @@ p {
 }
 .navigation__help {
   max-width: 15rem;
+}
+
+.contact-nav {
+  font-family: ridley_groteskregular;
+  font-size: 1.4rem;
+  /* letter-spacing: .1px; */
+  color: #757bbd;
 }
