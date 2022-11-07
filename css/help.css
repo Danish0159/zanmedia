@@ -1,0 +1,114 @@
+@import url(./_global.css);
+
+body {
+    background-color: rgb(250, 241, 239);
+}
+
+.nav__parent {
+    background-color: rgba(240, 104, 74, 0.95);
+}
+
+.help__navbar {
+    max-width: 122rem;
+    margin: auto;
+    padding: 0 2rem;
+}
+
+.header {
+    background-color: rgba(240, 104, 74, 0.95);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    z-index: 2;
+}
+
+@media only screen and (max-width: 992px) {
+    .header {
+        min-height: 40vh;
+    }
+}
+
+.header__content {
+    max-width: 100rem;
+    margin: auto;
+    z-index: 10;
+}
+
+.header__help,
+.header__how {
+    color: white;
+}
+
+.header__how {
+    font-size: 4.2rem;
+    margin: 2rem 0 5rem 0;
+}
+
+@media only screen and (max-width: 992px) {
+    .header__content {
+        padding: 0rem .5rem;
+    }
+
+    .header__how {
+        margin: 3rem 0 0rem 0;
+        font-size: 3rem;
+    }
+}
+
+.container {
+    width: 92%;
+    max-width: 850px;
+    margin: -5rem auto 0 auto;
+    background-color: #fff;
+    border-radius: 1rem;
+}
+
+.getting__started {
+    padding: 2.5rem;
+}
+
+@media (max-width: 480px) {
+    .getting__started {
+        padding: 2.5rem 1rem;
+    }
+}
+
+.getting__started--step {
+    border-radius: 10px 10px 10px 10px;
+    background-color: #ffffff;
+    padding: 1.6rem 1.6rem;
+    box-shadow: 0px 10px 24px 6px rgb(0 0 0 / 6%);
+    margin: 2rem 0rem;
+    transform: scale(0.99);
+    transition: all .1s;
+}
+
+.getting__started--step:hover {
+    cursor: pointer;
+    transform: scale(1);
+}
+
+.getting__started--p {
+    font-family: ridley_groteskregular;
+    margin-top: .5rem;
+}
+
+/* More Margin In Sub-Pages. */
+.help__p {
+    font-family: ridley_groteskregular;
+    margin: 2rem 0rem;
+}
+
+.help__h {
+    margin-top: .5rem;
+    font-size: 3.5rem;
+}
+
+.help__h1 {
+    font-size: 2.5rem;
+}
