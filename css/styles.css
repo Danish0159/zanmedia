@@ -276,13 +276,13 @@
 }
 
 .pricing__weekly {
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: #5b7070;
 }
 
 .pricing__pricing {
   font-family: ridley_grotesksemibold, sans-serif;
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 
 .pricing__monthly {
@@ -305,7 +305,7 @@
 
   .pricing__plan,
   .pricing__weekly {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
 
   .pricing__pricing {
@@ -446,7 +446,7 @@
 .pricingTableWrapper {
   overflow: auto;
   width: 100%;
-  max-width: 80rem;
+  max-width: 110rem;
   margin: auto;
   margin-top: 5.5rem;
 }
