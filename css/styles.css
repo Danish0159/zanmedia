@@ -276,8 +276,10 @@
 }
 
 .pricing__weekly {
-  font-size: 1.6rem;
+  font-family: ridley_groteskmedium;
+  font-size: 1.3rem;
   color: #5b7070;
+  padding-bottom: 1.4rem;
 }
 
 .pricing__pricing {
@@ -305,7 +307,8 @@
 
   .pricing__plan,
   .pricing__weekly {
-    font-size: 1.7rem;
+    font-size: .9rem;
+    padding-bottom: 1.2rem;
   }
 
   .pricing__pricing {
