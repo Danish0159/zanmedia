@@ -285,6 +285,7 @@
 .pricing__pricing {
   font-family: ridley_grotesksemibold, sans-serif;
   font-size: 3rem;
+  padding-bottom: 2rem;
 }
 
 .pricing__monthly {
@@ -307,7 +308,7 @@
 
   .pricing__plan,
   .pricing__weekly {
-    font-size: .9rem;
+    font-size: 1.5rem;
     padding-bottom: 1.2rem;
   }
 
